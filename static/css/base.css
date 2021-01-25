@@ -1,0 +1,11 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: red;
+}
+
+.top-banner {
+    background-color: black;
+}
