@@ -4,4 +4,26 @@ html {
 
 .top-banner {
     background-color: black;
+    height: 75px;
+}
+
+.banner-headline {
+    margin-top: 15px;
+}
+
+.banner-link {
+    padding-right: 10px;
+    margin-top: 15px;
+}
+
+.banner-icon {
+    padding-right: 5px;
+}
+
+.logo {
+    color: red;
+}
+
+.navbar-link {
+    padding: 5px;
 }
