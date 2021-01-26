@@ -37,11 +37,24 @@ body {
 .shop-now-button {
     background: black;
     color: white;
-    min-width: 260px;
+    min-width: 200px;
 }
 
 .full-screen {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.social-links {
+    font-size: 30px;
+    padding: 10px;
+    color: white;    
+    }
+.page-footer {
+    background-color: black;
+}
+
+.footer-text {
+    color: white;
 }
