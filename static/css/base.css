@@ -2,6 +2,12 @@ html {
     height: 100%;
 }
 
+body {
+   /* background: url('/media/surfing_image_3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px); */
+}
+
 .top-banner {
     background-color: black;
     height: 75px;
@@ -26,4 +32,16 @@ html {
 
 .navbar-link {
     padding: 5px;
+}
+
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 260px;
+}
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
