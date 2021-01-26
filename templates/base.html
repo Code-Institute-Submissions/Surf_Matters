@@ -28,7 +28,7 @@
     <header class="container-fluid">
         <div class="row text-center">
             <div class="col-sm-12 col-md-4 text-white top-banner d-sm-none d-md-block"></div>
-            <div class="col-sm-12 col-md-4 text-white top-banner">
+            <div class="col-sm-12 col-md-4 text-white top-banner text-center">
                 <h4 class="banner-headline">Free delivery on orders over £50</h4>
             </div>
             <div class="col-sm-12 col-md-4 text-white top-banner">
@@ -37,8 +37,8 @@
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">My Account</p>
+                                <div><i class="fas fa-user fa-lg banner-icon"></i></div>
+                                <p class="my-0 banner-text">My Account</p>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -57,8 +57,8 @@
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
                             <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                <p class="my-0">
+                                <div><i class="fas fa-shopping-bag fa-lg banner-icon"></i></div>
+                                <p class="my-0 banner-text">
                                     {% if grand_total %}
                                         ${{ grand_total|floatformat:2 }}
                                     {% else %}
@@ -71,6 +71,7 @@
                 </ul>
             </div>
         </div>
+        </header>
         
         <!--Nav bar taken from https://getbootstrap.com/docs/4.6/components/navbar/-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -107,7 +108,7 @@
                 </form>
             </div>
         </nav>
-    </header>
+    
 
     {% if messages %}
          <div class="message-container">

@@ -2,15 +2,9 @@ html {
     height: 100%;
 }
 
-body {
-   /* background: url('/media/surfing_image_3.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px); */
-}
-
 .top-banner {
     background-color: black;
-    height: 75px;
+    height: 70px;
 }
 
 .banner-headline {
@@ -22,8 +16,9 @@ body {
     margin-top: 15px;
 }
 
-.banner-icon {
-    padding-right: 5px;
+.banner-icon,
+.banner-text {
+    color: white;
 }
 
 .logo {
