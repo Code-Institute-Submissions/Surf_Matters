@@ -5,12 +5,14 @@ html {
 }
 
 .top-banner {
-    background-color: black;
+    background-color: #0F1110;
     height: 70px;
 }
 
 .banner-headline {
     margin-top: 15px;
+    font-family: 'Oswald', sans-serif;
+    color: #FEFFF9;
 }
 
 .banner-link {
@@ -20,13 +22,9 @@ html {
 
 .banner-icon,
 .banner-text {
-    color: white;
+    color: #FEFFF9;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
-}
-
-.logo {
-    color: red;
 }
 
 .navbar-link {
@@ -34,14 +32,15 @@ html {
 }
 
 .navbar-text,
-.banner-headline,
 .logo {
     font-family: 'Oswald', sans-serif;
+    color: #0F1110 !important; 
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background: #FEFFF9;
+    color: #0F1110;
+    font-family: 'Oswald', sans-serif;
     min-width: 200px;
 }
 
@@ -54,19 +53,19 @@ html {
 .social-links {
     font-size: 30px;
     padding: 10px;
-    color: white;    
+    color: #FEFFF9;    
     }
 .page-footer {
-    background-color: black;
+    background-color: #0F1110;
 }
 
 .footer-title {
-    color: white;
+    color: #FEFFF9;
     font-family: 'Oswald', sans-serif;
 }
 
 .footer-text {
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: #FEFFF9;
     font-weight: 300;
 }
