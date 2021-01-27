@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Roboto:wght@300;400;500;700&display=swap');
 html {
     height: 100%;
+    font-size: 18px;
 }
 
 .top-banner {
@@ -19,6 +21,8 @@ html {
 .banner-icon,
 .banner-text {
     color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
 }
 
 .logo {
@@ -27,6 +31,12 @@ html {
 
 .navbar-link {
     padding: 5px;
+}
+
+.navbar-text,
+.banner-headline,
+.logo {
+    font-family: 'Oswald', sans-serif;
 }
 
 .shop-now-button {
@@ -50,6 +60,13 @@ html {
     background-color: black;
 }
 
-.footer-text {
+.footer-title {
     color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer-text {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 300;
 }
