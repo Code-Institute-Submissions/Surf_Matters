@@ -6,40 +6,36 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid product-container">
+ <div class="container-fluid product-container">
         <div class="row">
             <div class="col text-center">
                 <hr class="w-75">
-                <h2 class="logo">All Products</h2>
+                <h2 class="logo">Book a Lesson</h2>
                 <hr class="w-75">
             </div>
         </div>
-        <div class="row">
+    </div>
+    <div class="row">
             <div class="col-12">
                 <div class="row">
-                    {% for product in products %}
+                    {% for surflesson in surf_lessons %}
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card h-100 product-card">
-                            {% if product.image %}
+                            {% if surflesson.image %}
                             <a href="#">
-                                <img class="card-img-top img-fluid product-image" src="{{ product.image.url }}"
+                                <img class="card-img-top img-fluid product-image" src="{{ surflesson.image.url }}"
                                     alt="{{ product.name }}">
                             </a>
                             {% endif %}
                             <div class="card-body">
                                 <p class="card-title">
-                                    {{ product.name }}
+                                    {{ surflesson.name }}
                                 </p>
-                                <h5>£ {{product.price}}</h5>
-                                 <p class="card-text">{{ product.subcategory.friendly_name }}</p>
+                                <h5>£ {{surflesson.price}}</h5>
+                                 
                             </div>
                             <div class="card-footer bg-white">
-                                {% if product.rating %}
-                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
-                                    5</small>
-                                {% else %}
-                                <small class="text-muted">No Rating</small>
-                                {% endif %}
+                                
                             </div>
                         </div>
                     </div>
@@ -47,5 +43,4 @@
                 </div>
             </div>
         </div>
-    </div>
 {% endblock %}

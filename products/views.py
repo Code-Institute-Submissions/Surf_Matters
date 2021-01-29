@@ -23,4 +23,4 @@ def surf_lessons(request):
         'surf_lessons': surf_lessons,
     }
 
-    return render(request, 'surf_lessons/surf_lessons.html', context)
+    return render(request, 'products/surf_lessons.html', context)
