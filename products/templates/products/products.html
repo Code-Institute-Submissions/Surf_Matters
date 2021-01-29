@@ -26,19 +26,19 @@
                                     alt="{{ product.name }}">
                             </a>
                             {% endif %}
-                            <div class="card-body">
-                                <p class="card-title">
+                            <div class="card-body product-text">
+                                <h6 class="card-title">
                                     {{ product.name }}
-                                </p>
+                            </h6>
                                 <h5>£ {{product.price}}</h5>
-                                 <p class="card-text">{{ product.subcategory.friendly_name }}</p>
+                                 <p class="product-text">{{ product.subcategory.friendly_name }}</p>
                             </div>
                             <div class="card-footer bg-white">
                                 {% if product.rating %}
-                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
+                                <small class="text-muted product-text"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
                                     5</small>
                                 {% else %}
-                                <small class="text-muted">No Rating</small>
+                                <small class="text-muted product-text">No Rating</small>
                                 {% endif %}
                             </div>
                         </div>
