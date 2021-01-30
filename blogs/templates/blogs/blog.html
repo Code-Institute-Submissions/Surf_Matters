@@ -9,7 +9,15 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1>This is a test</h1>
+                {% for blog in blogs %}
+                <div class="blog">
+                    <h2>{{ blog.title }}</h2>
+                    <img class="img-rounded" src="{{ blog.image.url }}" alt="{{ blog.title }}">
+                    <p class="blog-body">{{ blog.body }}</p>
+                    <h4>{{ blog.author }}</h4>
+                    <small class="text-muted product-text"><i class="fas fa-calendar-day mr-2"></i>{{ blog.date }}</small>
+                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
