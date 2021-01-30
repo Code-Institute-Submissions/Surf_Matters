@@ -12,3 +12,5 @@ def blog(request):
     }
 
     return render(request, 'blogs/blog.html', context)
+
+
