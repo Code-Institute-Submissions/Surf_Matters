@@ -72,5 +72,8 @@ html {
 
 .product-text {
     font-family: 'Roboto', sans-serif;
-    
+}
+
+.product-heading {
+    font-family: 'Oswald', sans-serif;
 }
