@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid product-container">
+        <div class="row">
+            <div class="col text-center">
+                <hr class="w-75">
+                <h2 class="logo">Our Products</h2>
+                <hr class="w-75">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <div class="image-container my-5">
+                    {% if product.image %}
+                    <a href="{{ product.image.url }}" target="_blank">
+                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                    {% else %}
+                    <a href="">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+            <!--Toggleable tabs taken from https://www.w3schools.com/bootstrap4/bootstrap_navs.asp-->
+            <div class="col-12 col-md-6">
+                <div class="product-details-container mb-5 mt-md-5">
+                    <h4 class="mb-0">{{ product.name }}</h4>
+                    <p class="lead mb-0 text-left font-weight-bold">£ {{ product.price }}</p>
+                    {% if product.rating %}
+                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                    {% else %}
+                    <small class="text-muted">No Rating</small>
+                    {% endif %}
+                    <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#home">Description</a>
+    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu1">Delivery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#menu2">Returns</a>
+                    </li>
+                </ul>
+    
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="home" class="container tab-pane active"><br>
+                        <h4>Description</h4>
+                        <p class="mt-3">{{ product.description }}</p>
+                    </div>
+                    <div id="menu1" class="container tab-pane fade"><br>
+                        <h3>Delivery</h3>
+                        <p>We offer a fast and efficient worldwide delivery service. Generally all goods ordered before 2pm
+                            are sent out on the same day (Mon-Fri). All large (wetsuit size and over) items destined for the
+                            UK are sent on next day delivery.</p>
+                        <p>If you can't find your country on our list, please contact us and we will provide you with a
+                            delivery quote.</p>
+                    </div>
+                    <div id="menu2" class="container tab-pane fade"><br>
+                        <h3>Returns</h3>
+                        <p>Not happy with your product? No problem at all! You can return the product up to 30 days after purchase for a no quibble replacement or refund.
+                           Simply fill out the returns form enclosed with your package and send back to us.</p>
+                        <p>Any queries, please email us at <a href="#">info@surfmatters.test</a> </p>
+                        
+                    </div>
+                </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+            
+  
+{% endblock %}

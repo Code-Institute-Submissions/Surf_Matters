@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col text-center">
                 <hr class="w-75">
-                <h2 class="logo">All Products</h2>
+                <h2 class="logo">Our Products</h2>
                 <hr class="w-75">
             </div>
         </div>
@@ -21,10 +21,14 @@
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card shadow h-100 product-card">
                             {% if product.image %}
-                            <a href="#">
+                            <a href="{% url 'product_details' product.id %}">
                                 <img class="card-img-top img-fluid product-image" src="{{ product.image.url }}"
                                     alt="{{ product.name }}">
                             </a>
+                            {% else %}
+                        <a href="{% url 'product_details' product.id %}">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        </a>
                             {% endif %}
                             <div class="card-body product-text">
                                 <h6 class="card-title">
