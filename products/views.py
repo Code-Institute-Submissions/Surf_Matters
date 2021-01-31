@@ -10,6 +10,7 @@ def all_products(request):
     """ A view to show all products"""
 
     products = Product.objects.all()
+    query = None
 
     if request.GET:
         if 'q' in request.GET:
