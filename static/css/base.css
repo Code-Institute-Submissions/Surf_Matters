@@ -70,10 +70,12 @@ html {
     font-weight: 300;
 }
 
-.product-text {
+.product-text,
+.blog-text {
     font-family: 'Roboto', sans-serif;
 }
 
-.product-heading {
+.product-heading,
+.blog-heading {
     font-family: 'Oswald', sans-serif;
 }

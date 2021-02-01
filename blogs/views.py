@@ -12,3 +12,12 @@ def blog(request):
     }
 
     return render(request, 'blogs/blog.html', context)
+
+
+def blog_details(request, slug):
+    """ A view to show individual blogs"""
+
+    # return HttpResponse(slug)
+
+    blog = Blog.objects.get(slug=slug)
+    return render(request, 'blogs/blog_detail.html', {'blog': blog})
