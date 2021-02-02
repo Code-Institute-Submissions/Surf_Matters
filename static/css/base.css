@@ -79,3 +79,7 @@ html {
 .blog-heading {
     font-family: 'Oswald', sans-serif;
 }
+
+.product-price {
+    padding-bottom: 10px;
+}
