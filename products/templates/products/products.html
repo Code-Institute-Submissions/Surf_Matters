@@ -11,7 +11,15 @@
             <div class="col text-center">
                 <hr class="w-75">
                 <h2 class="logo">Our Products</h2>
-                
+                <button type="button" class="btn btn-light dropdown-toggle mx-auto d-block" data-toggle="dropdown">
+                        Sort By
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Price (low to high)</a>
+                        <a href="{% url 'products' %}?sort=price&direction=desc" class="dropdown-item">Price (high to low)</a>
+                        <a href="{% url 'products' %}?sort=rating&direction=asc" class="dropdown-item ">Rating (low to high)</a>
+                        <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">Rating (high to low)</a>
+                    </div>
             </div>
             </div>
             <div class="row">
@@ -20,19 +28,19 @@
                         Wet Suits
                     </button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Mens Wetsuits</a>
-                        <a class="dropdown-item" href="#">Ladies Wetsuits</a>
-                        <a class="dropdown-item" href="#">Kids Wetsuits</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?subcategory=mens_wetsuit">Mens Wetsuits</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?subcategory=ladies_wetsuit">Ladies Wetsuits</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?subcategory=kids_wetsuit">Kids Wetsuits</a>
                     </div>
                 </div>
-               <div class="col-md-6 dropdown p-3">
+                <div class="col-md-6 dropdown p-3">
                     <button type="button" class="btn btn-dark dropdown-toggle mx-auto d-block" data-toggle="dropdown">
                         Surf Boards
                     </button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Short Boards</a>
-                        <a class="dropdown-item" href="#">Long Boards</a>
-                        <a class="dropdown-item" href="#">Body Boards</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?subcategory=short_board">Short Boards</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?subcategory=long_board">Long Boards</a>
+                        <a class="dropdown-item" href="{% url 'products' %}?subcategory=body_board">Body Boards</a>
                     </div>
                 </div>
             </div>

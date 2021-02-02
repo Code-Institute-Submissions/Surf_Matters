@@ -1,31 +1,54 @@
-
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 
-from .models import Product, SurfLesson
+from .models import Product, SurfLesson, Subcategory
 
 
 def all_products(request):
-    """ A view to show all products"""
+    """ A view to show all products, including sorting and search queries """
 
     products = Product.objects.all()
     query = None
+    subcategories = None
+    sort = None
+    direction = None
 
     if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                products = products.annotate(lower_name=Lower('name'))
+
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            products = products.order_by(sortkey)
+
+        if 'subcategory' in request.GET:
+            subcategories = request.GET['subcategory'].strip()
+            products = products.filter(subcategory__name__exact=subcategories)
+            subcategories = Subcategory.objects.filter(name__in=subcategories)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "No search criteria entered!")
+                messages.error(request, "No search citeria entered!")
                 return redirect(reverse('products'))
 
-            queries = Q(
-                name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
+
+    current_sorting = f'{sort}_{direction}'
 
     context = {
         'products': products,
         'search_term': query,
+        'current_subcategories': subcategories,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'products/products.html', context)
