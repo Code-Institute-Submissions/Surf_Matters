@@ -83,3 +83,11 @@ html {
 .product-price {
     padding-bottom: 10px;
 }
+
+.comments-form {
+    margin-top: 1.3rem;
+}
+
+.comments {
+    padding: 10px;
+}

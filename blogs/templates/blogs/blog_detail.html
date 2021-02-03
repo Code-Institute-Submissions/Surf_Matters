@@ -24,7 +24,6 @@
                 written by: {{ blog.author }}
             </p>
             <hr>
-            <!-- Date/Time -->
             <p class="blog-text">Posted on: {{ blog.date }} </p>
             <hr>
             <img class="img-fluid rounded" src="{{ blog.image.url }}" alt="{{ blog.title }}">
@@ -32,83 +31,58 @@
             <p class="lead blog-text">{{ blog.body | markdownify }}</p>
             <hr>
             <div class="media mb-4">
-             <div class="media-body">
-            <h2 class="mt-0">Comments...</h2>
-            
-          {% for comment in comments %}
-        <div class="comments" style="padding: 10px;">
-          <p class="font-weight-bold">
-            {{ comment.name }}
-            <span class=" text-muted font-weight-normal">
-              {{ comment.date }}
-            </span>
-          </p>
-          {{ comment.body | linebreaks }}
+                <div class="media-body">
+                    <h2 class="mt-0 blog-heading">Comments...</h2>
+                       {% for comment in comments %}
+                    <div class="comments blog-text">
+                        <p class="font-weight-bold blog-text">
+                            {{ comment.name }}
+                            <span class=" text-muted font-weight-normal blog-text">
+                                {{ comment.date }}
+                            </span>
+                         </p>
+                          <p class="blog-text">{{ comment.comment | linebreaks }}</p>
+   
+                    </div>
+                    {% endfor %}
+                    <div class="col-md-8 card my-4  mt-3 ">
+                        <div class="card-body">
+                            {% if new_comment %}
+                            <div class="alert alert-success .blog-text" role="alert">
+                                Thanks for your comment.
+                            </div>
+                            {% else %}
+                            <h4 class="blog-heading">Please leave a comment.</h4>
+                            <form method="post" class="comments-form" style="margin-top: 1.3em;">
+                                {{ comment_form.as_p }}
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-dark  btn-lg">Submit</button>
+                            </form>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        {% endfor %}
-                <div class="col-md-8 card mb-4  mt-3 ">
-      <div class="card-body">
-        {% if new_comment %}
-        <div class="alert alert-success" role="alert">
-          Thanks for your comment.
-        </div>
-        {% else %}
-        <h3>Leave a comment</h3>
-        <form method="post" style="margin-top: 1.3em;">
-          {{ comment_form.as_p }}
-          {% csrf_token %}
-          <button type="submit" class="btn btn-primary  btn-lg">Submit</button>
-        </form>
-        {% endif %}
-      </div>
-    </div>
-  </div>
-</div>
-                
-          
-          </div>
-        </div>
-        </div>
+
         <!-- Sidebar Widgets Column -->
         <div class="col-md-4">
-            <!-- Categories Widget -->
             <div class="card my-4">
-                <h5 class="card-header blog-heading">Categories</h5>
+                <h5 class="card-header blog-heading">We would love to hear from you!</h5>
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="#">Web Design</a>
-                                </li>
-                                <li>
-                                    <a href="#">HTML</a>
-                                </li>
-                                <li>
-                                    <a href="#">Freebies</a>
-                                </li>
-                            </ul>
+                        <div class="col">
+                            <p class="blog-text"> 
+                                Feel free to leave a comment at the bottom of the page.
+                            </p>
                         </div>
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="#">JavaScript</a>
-                                </li>
-                                <li>
-                                    <a href="#">CSS</a>
-                                </li>
-                                <li>
-                                    <a href="#">Tutorials</a>
-                                </li>
-                            </ul>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 
 
 {% endblock %}
