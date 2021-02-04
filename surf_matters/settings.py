@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'products',
     'blogs',
     'markdownify',
+    'bag',
 ]
 
 MARKDOWNIFY_STRIP = False

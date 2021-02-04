@@ -25,4 +25,5 @@ urlpatterns = [
     path('', include('home_page.urls')),
     path('products/', include('products.urls')),
     path('blogs/', include('blogs.urls')),
+    path('bag/', include('bag.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

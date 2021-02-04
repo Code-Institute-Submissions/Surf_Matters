@@ -71,7 +71,8 @@ html {
 }
 
 .product-text,
-.blog-text {
+.blog-text,
+.bag-text {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -82,6 +83,10 @@ html {
 
 .product-price {
     padding-bottom: 10px;
+}
+
+.back-top-button {
+    margin: 1rem;
 }
 
 .comments-form {

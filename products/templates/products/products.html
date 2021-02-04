@@ -101,5 +101,17 @@
                 </div>
             </div>
         </div>
+        <button type="button" class="btn btn-dark btt-link d-flex mx-auto back-top-button">Back to Top</button>	
     </div>
+     
+        
+
 {% endblock %}
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+		$('.btt-link').click(function(e) {
+			window.scrollTo(0,0)
+		})
+    </script>
+    {% endblock %}
