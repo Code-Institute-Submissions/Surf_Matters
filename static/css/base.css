@@ -96,3 +96,9 @@ html {
 .comments {
     padding: 10px;
 }
+
+.btn-outline-black {
+    background: #FEFFF9;
+    color: #0F1110 !important; 
+    border: 1px solid #0F1110;
+}
