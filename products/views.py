@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 
-from .models import Product, SurfLesson, Subcategory
+from .models import Product, SurfLesson, Subcategory, Category
 
 
 def all_products(request):
@@ -10,6 +10,7 @@ def all_products(request):
 
     products = Product.objects.all()
     query = None
+    categories = None
     subcategories = None
     sort = None
     direction = None
@@ -29,9 +30,14 @@ def all_products(request):
             products = products.order_by(sortkey)
 
         if 'subcategory' in request.GET:
-            subcategories = request.GET['subcategory'].strip()
+            subcategories = request.GET['subcategory']
             products = products.filter(subcategory__name__exact=subcategories)
             subcategories = Subcategory.objects.filter(name__in=subcategories)
+
+        if 'category' in request.GET:
+            categories = request.GET['category']
+            products = products.filter(category__name__exact=categories)
+            categories = Category.objects.filter(name__in=categories)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -39,7 +45,8 @@ def all_products(request):
                 messages.error(request, "No search citeria entered!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(
+                name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -48,6 +55,7 @@ def all_products(request):
         'products': products,
         'search_term': query,
         'current_subcategories': subcategories,
+        'current_categories': categories,
         'current_sorting': current_sorting,
     }
 

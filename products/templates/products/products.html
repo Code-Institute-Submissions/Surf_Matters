@@ -28,6 +28,7 @@
                         Wet Suits
                     </button>
                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{% url 'products' %}?category=wet_suit">All Wetsuits</a>
                         <a class="dropdown-item" href="{% url 'products' %}?subcategory=mens_wetsuit">Mens Wetsuits</a>
                         <a class="dropdown-item" href="{% url 'products' %}?subcategory=ladies_wetsuit">Ladies Wetsuits</a>
                         <a class="dropdown-item" href="{% url 'products' %}?subcategory=kids_wetsuit">Kids Wetsuits</a>
@@ -38,11 +39,22 @@
                         Surf Boards
                     </button>
                     <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{% url 'products' %}?category=surf_board">All Surf Boards</a>
                         <a class="dropdown-item" href="{% url 'products' %}?subcategory=short_board">Short Boards</a>
                         <a class="dropdown-item" href="{% url 'products' %}?subcategory=long_board">Long Boards</a>
                         <a class="dropdown-item" href="{% url 'products' %}?subcategory=body_board">Body Boards</a>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                 <div class="col-12 col-md-6 order-md-first">
+                        <p class="text-muted mt-3 text-center text-md-left  product-text">
+                            {% if search_term or current_categories or current_sorting != 'None_None' %}
+                                <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                            {% endif %}
+                            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                        </p>
+                    </div>
             </div>
             <hr class="w-75">
         
