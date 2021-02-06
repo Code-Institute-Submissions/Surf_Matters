@@ -108,3 +108,7 @@ html {
     font-family: 'Roboto', sans-serif;
     color: #0F1110;
 }
+
+.update-button {
+    cursor: pointer;
+}
