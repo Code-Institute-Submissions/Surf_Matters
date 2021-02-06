@@ -20,7 +20,7 @@
                             <th scope="col" class="bag-text">Product Information</th>
                             <th scope="col" class="bag-text"></th>
                             <th scope="col" class="bag-text">Price</th>
-                            <th scope="col" class="bag-text">Quantity</th>
+                            <th scope="col" class="bag-text text-center">Qty</th>
                             <th scope="col" class="bag-text">Subtotal</th>
                         </tr>
                     </thead>
@@ -33,13 +33,14 @@
                         </td>
                         <td class="py-3">
                             <p class="my-0 bag-text"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0"><strong>Size: </strong>{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                             <p class="my-0 small text-muted bag-text">SKU: {{ item.product.sku|upper }}</p>
                         </td>
                         <td class="py-3">
                             <p class="my-0 bag-text">£{{ item.product.price }}</p>
                         </td>
                         <td class="py-3 w-25">
-                            <p class="my-0 bag-text">{{ item.quantity }}</p>
+                            <p class="my-0 bag-text text-center">{{ item.quantity }}</p>
                         </td>
                         <td class="py-3">
                             <p class="my-0 bag-text">£{{ item.product.price }}</p>
