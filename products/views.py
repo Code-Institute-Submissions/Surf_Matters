@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, SurfLesson, Subcategory, Category
+from .models import Product, Subcategory, Category
 
 
 def all_products(request):
@@ -61,18 +61,6 @@ def all_products(request):
     }
 
     return render(request, 'products/products.html', context)
-
-
-def surf_lessons(request):
-    """ A view to show all surf lesson products"""
-
-    surf_lessons = SurfLesson.objects.all()
-
-    context = {
-        'surf_lessons': surf_lessons,
-    }
-
-    return render(request, 'products/surf_lessons.html', context)
 
 
 def product_details(request, product_id):
