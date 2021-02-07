@@ -55,6 +55,7 @@ html {
     padding: 10px;
     color: #FEFFF9;    
     }
+    
 .page-footer {
     background-color: #0F1110;
 }
@@ -129,4 +130,20 @@ html {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+.toast-bg-success {
+    background-color: #54BE9B;
+}
+
+.toast-bg-warning {
+    background-color: #F2E205;
+}
+
+.toast-bg-info {
+    background-color: #94D7F2;
+}
+
+.toast-bg-error {
+    background-color:#E5361B;
 }
