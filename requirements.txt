@@ -2,6 +2,7 @@ asgiref==3.3.1
 beautifulsoup4==4.9.3
 Django==3.1.5
 django-allauth==0.44.0
+django-crispy-forms==1.11.0
 django-markdownify==0.8.2
 Markdown==3.3.3
 markdownify==0.6.3

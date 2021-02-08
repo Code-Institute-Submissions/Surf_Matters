@@ -48,6 +48,9 @@ INSTALLED_APPS = [
     'markdownify',
     'bag',
     'checkout',
+
+    # Other
+    'crispy_forms',
 ]
 
 MARKDOWNIFY_STRIP = False
@@ -68,6 +71,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'surf_matters.urls'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -82,8 +87,13 @@ TEMPLATES = [
                 'django.template.context_processors.request',  # Used by Allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]

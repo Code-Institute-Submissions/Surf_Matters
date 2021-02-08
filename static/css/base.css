@@ -74,7 +74,8 @@ html {
 
 .product-text,
 .blog-text,
-.bag-text {
+.bag-text,
+.checkout-text {
     font-family: 'Roboto', sans-serif;
 }
 
