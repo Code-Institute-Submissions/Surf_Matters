@@ -4,20 +4,22 @@ html {
     font-size: 18px;
 }
 
+/* Top Banner */
+
 .top-banner {
     background-color: #0F1110;
-    height: 70px;
+    height: 3.9rem;
 }
 
 .banner-headline {
-    margin-top: 15px;
+    margin-top: 0.8rem;
     font-family: 'Oswald', sans-serif;
     color: #FEFFF9;
 }
 
 .banner-link {
-    padding-right: 10px;
-    margin-top: 15px;
+    padding-right: 0.55rem;
+    margin-top: 0.8rem;
 }
 
 .banner-icon,
@@ -27,6 +29,7 @@ html {
     font-weight: 300;
 }
 
+/* Navbar */
 .navbar-link {
     padding: 5px;
 }
@@ -37,6 +40,8 @@ html {
     color: #0F1110 !important; 
 }
 
+/* Buttons */
+
 .shop-now-button {
     background: #FEFFF9;
     color: #0F1110;
@@ -44,11 +49,27 @@ html {
     min-width: 200px;
 }
 
+.back-top-button {
+    margin: 1rem;
+}
+
+.btn-outline-black {
+    background: #FEFFF9;
+    color: #0F1110 !important; 
+    border: 1px solid #0F1110;
+}
+
+.update-button {
+    cursor: pointer;
+}
+
 .full-screen {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/* Footer */
 
 .social-links {
     font-size: 30px;
@@ -72,6 +93,8 @@ html {
     font-size: 0.9rem;
 }
 
+/* CSS for Text*/
+
 .product-text,
 .blog-text,
 .bag-text,
@@ -85,37 +108,26 @@ html {
     font-family: 'Oswald', sans-serif;
 }
 
-.product-price {
-    padding-bottom: 10px;
-}
-
-.back-top-button {
-    margin: 1rem;
-}
-
-.comments-form {
-    margin-top: 1.3rem;
-}
-
-.comments {
-    padding: 10px;
-}
-
-.btn-outline-black {
-    background: #FEFFF9;
-    color: #0F1110 !important; 
-    border: 1px solid #0F1110;
-}
 
 .bag-table-text {
     font-family: 'Roboto', sans-serif;
     color: #0F1110;
 }
 
-.update-button {
-    cursor: pointer;
+.product-price {
+    padding-bottom: 0.55rem;
 }
 
+/* Blog Comments*/
+.comments-form {
+    margin-top: 1.3rem;
+}
+
+.comments {
+    padding: 0.55rem;
+}
+
+/* Toast Messages */
 .message-container {
     position: fixed;
     top: 72px;

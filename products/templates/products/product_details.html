@@ -6,42 +6,42 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid product-container">
-        <div class="row">
-            <div class="col text-center">
-                <hr class="w-75">
-                <h2 class="logo">Our Products</h2>
-                <hr class="w-75">
+<div class="container-fluid product-container">
+    <div class="row">
+        <div class="col text-center">
+            <hr class="w-75">
+            <h2 class="logo">Our Products</h2>
+            <hr class="w-75">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container my-5">
+                {% if product.image %}
+                <a href="{{ product.image.url }}" target="_blank">
+                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                </a>
+                {% endif %}
             </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                <div class="image-container my-5">
-                    {% if product.image %}
-                    <a href="{{ product.image.url }}" target="_blank">
-                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                    </a>
-                    {% else %}
-                    <a href="">
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                    </a>
-                    {% endif %}
-                </div>
-            </div>
-            <!--Toggleable tabs taken from https://www.w3schools.com/bootstrap4/bootstrap_navs.asp-->
-            <div class="col-12 col-md-6">
-                <div class="product-details-container mb-5 mt-md-5">
-                    <h4 class="mb-0 product-heading">{{ product.name }}</h4>
-                    <p class="lead mb-0 text-left font-weight-bold product-text">£ {{ product.price }}</p>
-                    {% if product.rating %}
-                    <small class="text-muted product-text"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-                    {% else %}
-                    <small class="text-muted product-text">No Rating</small>
-                    {% endif %}
-                    <ul class="nav nav-tabs" role="tablist">
+        <!--Toggleable tabs taken from https://www.w3schools.com/bootstrap4/bootstrap_navs.asp-->
+        <div class="col-12 col-md-6">
+            <div class="product-details-container mb-5 mt-md-5">
+                <h4 class="mb-0 product-heading">{{ product.name }}</h4>
+                <p class="lead mb-0 text-left font-weight-bold product-text">£ {{ product.price }}</p>
+                {% if product.rating %}
+                <small class="text-muted product-text"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                {% else %}
+                <small class="text-muted product-text">No Rating</small>
+                {% endif %}
+                <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active product-heading" data-toggle="tab" href="#home">Description</a>
-    
+
                     </li>
                     <li class="nav-item">
                         <a class="nav-link product-heading" data-toggle="tab" href="#menu1">Delivery</a>
@@ -50,7 +50,7 @@
                         <a class="nav-link product-heading" data-toggle="tab" href="#menu2">Returns</a>
                     </li>
                 </ul>
-    
+
                 <!-- Tab panes -->
                 <div class="tab-content">
                     <div id="home" class="container tab-pane active"><br>
@@ -58,13 +58,14 @@
                         <p class="mt-3 product-text">{{ product.description }}</p>
                         <!--Shopping bag form taken from Code Institute Boutique Ado Project-->
                         <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
-                        {% csrf_token %}
-                        <div class="form-row">
-                            {% with product.has_sizes as s %}
-                            {% if s %}
+                            {% csrf_token %}
+                            <div class="form-row">
+                                {% with product.has_sizes as s %}
+                                {% if s %}
                                 <div class="col-12">
                                     <p><strong>Size:</strong></p>
-                                    <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                    <select class="form-control rounded-0 w-50" name="product_size"
+                                        id='id_product_size'>
                                         <option value="xs">XS</option>
                                         <option value="s">S</option>
                                         <option value="m" selected>M</option>
@@ -72,72 +73,75 @@
                                         <option value="xl">XL</option>
                                     </select>
                                 </div>
-                            {% endif %}
-                            <div class="col-12">
-                                <p class="mt-3"><strong>Quantity:</strong></p>
-                                <div class="form-group w-50">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <button class="decrement-qty btn btn-black rounded-0" 
-                                                data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
-                                                <span class="icon">
-                                                    <i class="fas fa-minus"></i>
-                                                </span>
-                                            </button>
-                                        </div>
-                                        <input class="form-control qty_input" type="number"
-                                            name="quantity" value="1" min="1" max="99"
-                                            data-item_id="{{ product.id }}"
-                                            id="id_qty_{{ product.id }}">
-                                        <div class="input-group-append">
-                                            <button class="increment-qty btn btn-black rounded-0"
-                                                data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
-                                                <span class="icon">
-                                                    <i class="fas fa-plus"></i>
-                                                </span>
-                                            </button>
+                                {% endif %}
+                                <div class="col-12">
+                                    <p class="mt-3"><strong>Quantity:</strong></p>
+                                    <div class="form-group w-50">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <button class="decrement-qty btn btn-black rounded-0"
+                                                    data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                                    <span class="icon">
+                                                        <i class="fas fa-minus"></i>
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <input class="form-control qty_input" type="number" name="quantity"
+                                                value="1" min="1" max="99" data-item_id="{{ product.id }}"
+                                                id="id_qty_{{ product.id }}">
+                                            <div class="input-group-append">
+                                                <button class="increment-qty btn btn-black rounded-0"
+                                                    data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                                    <span class="icon">
+                                                        <i class="fas fa-plus"></i>
+                                                    </span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="col{% if s %}-12 mt-2{% endif %}">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
-                                    <span class="icon">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                    <span class="text-uppercase">Keep Shopping</span>
-                                </a>
-                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                                <div class="col{% if s %}-12 mt-2{% endif %}">
+                                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                        <span class="icon">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </span>
+                                        <span class="text-uppercase">Keep Shopping</span>
+                                    </a>
+                                    <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5"
+                                        value="Add to Bag">
+                                </div>
+                                <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                {% endwith %}
                             </div>
-                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                            {% endwith %}
-                        </div>
-                    </form>
+                        </form>
                     </div>
                     <div id="menu1" class="container tab-pane fade"><br>
                         <h3 class="product-heading">Delivery</h3>
-                        <p class="product-text">We offer a fast and efficient worldwide delivery service. Generally all goods ordered before 2pm
-                            are sent out on the same day (Mon-Fri). All large (wetsuit size and over) items destined for the
+                        <p class="product-text">We offer a fast and efficient worldwide delivery service. Generally all
+                            goods ordered before 2pm
+                            are sent out on the same day (Mon-Fri). All large (wetsuit size and over) items destined for
+                            the
                             UK are sent on next day delivery.</p>
-                        <p class="product-text">If you can't find your country on our list, please contact us and we will provide you with a
+                        <p class="product-text">If you can't find your country on our list, please contact us and we
+                            will provide you with a
                             delivery quote.</p>
                     </div>
                     <div id="menu2" class="container tab-pane fade"><br>
                         <h3 class="product-heading">Returns</h3>
-                        <p class="product-text">Not happy with your product? No problem at all! You can return the product up to 30 days after purchase for a no quibble replacement or refund.
-                           Simply fill out the returns form enclosed with your package and send back to us.</p>
-                        <p class="product-text">Any queries, please email us at <a href="#">info@surfmatters.test</a> </p>
-                        
+                        <p class="product-text">Not happy with your product? No problem at all! You can return the
+                            product up to 30 days after purchase for a no quibble replacement or refund.
+                            Simply fill out the returns form enclosed with your package and send back to us.</p>
+                        <p class="product-text">Any queries, please email us at <a href="#">info@surfmatters.test</a>
+                        </p>
                     </div>
-                </div>
-    
                 </div>
             </div>
         </div>
     </div>
-            
-  
+</div>
+
+
 {% endblock %}
 
 {% block postloadjs %}

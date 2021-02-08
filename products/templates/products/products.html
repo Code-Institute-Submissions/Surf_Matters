@@ -6,112 +6,120 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid product-container">
-        <div class="row">
-            <div class="col text-center">
-                <hr class="w-75">
-               <a href="{% url 'products' %}" class="text-decoration-none"> <h2 class="logo">Products</h2> </a>
-                <button type="button" class="btn btn-light dropdown-toggle mx-auto d-block" data-toggle="dropdown">
-                        Sort By
-                    </button>
-                    <div class="dropdown-menu">
-                        <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Price (low to high)</a>
-                        <a href="{% url 'products' %}?sort=price&direction=desc" class="dropdown-item">Price (high to low)</a>
-                        <a href="{% url 'products' %}?sort=rating&direction=asc" class="dropdown-item ">Rating (low to high)</a>
-                        <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">Rating (high to low)</a>
-                    </div>
-            </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 dropdown p-3">
-                    <button type="button" class="btn btn-dark dropdown-toggle mx-auto d-block" data-toggle="dropdown">
-                        Wet Suits
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="{% url 'products' %}?category=wet_suit">All Wetsuits</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?subcategory=mens_wetsuit">Mens Wetsuits</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?subcategory=ladies_wetsuit">Ladies Wetsuits</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?subcategory=kids_wetsuit">Kids Wetsuits</a>
-                    </div>
-                </div>
-                <div class="col-md-6 dropdown p-3">
-                    <button type="button" class="btn btn-dark dropdown-toggle mx-auto d-block" data-toggle="dropdown">
-                        Surf Boards
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="{% url 'products' %}?category=surf_board">All Surf Boards</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?subcategory=short_board">Short Boards</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?subcategory=long_board">Long Boards</a>
-                        <a class="dropdown-item" href="{% url 'products' %}?subcategory=body_board">Body Boards</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                 <div class="col-12 col-md-6 order-md-first">
-                        <p class="text-muted mt-3 text-center text-md-left  product-text">
-                            {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
-                            {% endif %}
-                            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
-                        </p>
-                    </div>
-            </div>
+<div class="container-fluid product-container">
+    <div class="row">
+        <div class="col text-center">
             <hr class="w-75">
-        
-        <div class="row">
-            <div class="col-12">
-                <div class="row">
-                    {% for product in products %}
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="card shadow h-100 product-card">
-                            {% if product.image %}
-                            <a href="{% url 'product_details' product.id %}">
-                                <img class="card-img-top img-fluid product-image" src="{{ product.image.url }}"
-                                    alt="{{ product.name }}">
-                            </a>
-                            {% else %}
-                        <a href="{% url 'product_details' product.id %}">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                        </a>
-                            {% endif %}
-                            <div class="card-body product-text">
-                                <h6 class="card-title product-heading">
-                                    {{ product.name }}
-                            </h6>
-                                <h5 class="product-heading product-price">£ {{product.price}}</h5>
-                                {% if product.subcategory %}
-                                 <p class="small">
-                                                <a class="text-muted" href="{% url 'products' %}?subcategory={{ product.subcategory.name }}">
-                                                    <i class="fas fa-angle-right mr-1"></i>{{ product.subcategory.friendly_name }}
-                                                </a>
-                                                {% endif %}
-                                 </p>
-                            </div>
-                            <div class="card-footer bg-white">
-                                {% if product.rating %}
-                                <small class="text-muted product-text"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
-                                    5</small>
-                                {% else %}
-                                <small class="text-muted product-text">No Rating</small>
-                                {% endif %}
-                            </div>
-                        </div>
-                    </div>
-          {% endfor %}
-                </div>
+            <!-- Product Sorting -->
+            <a href="{% url 'products' %}" class="text-decoration-none">
+                <h2 class="logo">Products</h2>
+            </a>
+            <button type="button" class="btn btn-light dropdown-toggle mx-auto d-block" data-toggle="dropdown">
+                Sort By
+            </button>
+            <div class="dropdown-menu">
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Price (low to high)</a>
+                <a href="{% url 'products' %}?sort=price&direction=desc" class="dropdown-item">Price (high to low)</a>
+                <a href="{% url 'products' %}?sort=rating&direction=asc" class="dropdown-item ">Rating (low to high)</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">Rating (high to
+                    low)</a>
             </div>
         </div>
-        <button type="button" class="btn btn-dark btt-link d-flex mx-auto back-top-button">Back to Top</button>	
     </div>
-     
-        
+    <div class="row">
+        <!-- Product Filters-->
+        <div class="col-md-6 dropdown p-3">
+            <button type="button" class="btn btn-dark dropdown-toggle mx-auto d-block" data-toggle="dropdown">
+                Wet Suits
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="{% url 'products' %}?category=wet_suit">All Wetsuits</a>
+                <a class="dropdown-item" href="{% url 'products' %}?subcategory=mens_wetsuit">Mens Wetsuits</a>
+                <a class="dropdown-item" href="{% url 'products' %}?subcategory=ladies_wetsuit">Ladies Wetsuits</a>
+                <a class="dropdown-item" href="{% url 'products' %}?subcategory=kids_wetsuit">Kids Wetsuits</a>
+            </div>
+        </div>
+        <div class="col-md-6 dropdown p-3">
+            <button type="button" class="btn btn-dark dropdown-toggle mx-auto d-block" data-toggle="dropdown">
+                Surf Boards
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="{% url 'products' %}?category=surf_board">All Surf Boards</a>
+                <a class="dropdown-item" href="{% url 'products' %}?subcategory=short_board">Short Boards</a>
+                <a class="dropdown-item" href="{% url 'products' %}?subcategory=long_board">Long Boards</a>
+                <a class="dropdown-item" href="{% url 'products' %}?subcategory=body_board">Body Boards</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6 order-md-first">
+            <p class="text-muted mt-3 text-center text-md-left  product-text">
+                {% if search_term or current_categories or current_sorting != 'None_None' %}
+                <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                {% endif %}
+                {{ products|length }} Products{% if search_term %} found for
+                <strong>"{{ search_term }}"</strong>{% endif %}
+            </p>
+        </div>
+    </div>
+    <hr class="w-75">
+    <!--All Products-->
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                {% for product in products %}
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow h-100 product-card">
+                        {% if product.image %}
+                        <a href="{% url 'product_details' product.id %}">
+                            <img class="card-img-top img-fluid product-image" src="{{ product.image.url }}"
+                                alt="{{ product.name }}">
+                        </a>
+                        {% else %}
+                        <a href="{% url 'product_details' product.id %}">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                alt="{{ product.name }}">
+                        </a>
+                        {% endif %}
+                        <div class="card-body product-text">
+                            <h6 class="card-title product-heading">
+                                {{ product.name }}
+                            </h6>
+                            <h5 class="product-heading product-price">£ {{product.price}}</h5>
+                            {% if product.subcategory %}
+                            <p class="small">
+                                <a class="text-muted"
+                                    href="{% url 'products' %}?subcategory={{ product.subcategory.name }}">
+                                    <i class="fas fa-angle-right mr-1"></i>{{ product.subcategory.friendly_name }}
+                                </a>
+                                {% endif %}
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            {% if product.rating %}
+                            <small class="text-muted product-text"><i class="fas fa-star mr-1"></i>{{ product.rating }}
+                                /
+                                5</small>
+                            {% else %}
+                            <small class="text-muted product-text">No Rating</small>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-dark btt-link d-flex mx-auto back-top-button">Back to Top</button>
+</div>
 
 {% endblock %}
+
 {% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript">
-		$('.btt-link').click(function(e) {
-			window.scrollTo(0,0)
-		})
-    </script>
-    {% endblock %}
+{{ block.super }}
+<script type="text/javascript">
+    $('.btt-link').click(function (e) {
+        window.scrollTo(0, 0)
+    })
+</script>
+{% endblock %}
