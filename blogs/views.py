@@ -22,6 +22,9 @@ def blog_details(request, slug):
     post = get_object_or_404(Blog, slug=slug)
     comments = post.comments.filter()
     new_comment = None
+
+    comment_form = CommentForm() # GET
+
     # Comment posted
     if request.method == 'POST':
         comment_form = CommentForm(data=request.POST)
@@ -33,8 +36,7 @@ def blog_details(request, slug):
             new_comment.post = post
             # Save the comment to the database
             new_comment.save()
-    else:
-        comment_form = CommentForm()
+        
     return render(
         request, 'blogs/blog_detail.html', {
             'blog': blog, 'post': post, 'comments': comments,

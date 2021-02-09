@@ -14,20 +14,50 @@
             <a href="{% url 'products' %}" class="text-decoration-none">
                 <h2 class="logo">Products</h2>
             </a>
-            <button type="button" class="btn btn-light dropdown-toggle mx-auto d-block" data-toggle="dropdown">
-                Sort By
-            </button>
-            <div class="dropdown-menu">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Price (low to high)</a>
-                <a href="{% url 'products' %}?sort=price&direction=desc" class="dropdown-item">Price (high to low)</a>
-                <a href="{% url 'products' %}?sort=rating&direction=asc" class="dropdown-item ">Rating (low to high)</a>
-                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">Rating (high to
-                    low)</a>
+
+            <div class="d-inline">
+                <button type="button" class="btn btn-light dropdown-toggle mx-auto d-inline" data-toggle="dropdown">
+                    Sort By
+                </button>
+                <div class="dropdown-menu">
+                    <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">Price (low to
+                        high)</a>
+                    <a href="{% url 'products' %}?sort=price&direction=desc" class="dropdown-item">Price (high to
+                        low)</a>
+                    <a href="{% url 'products' %}?sort=rating&direction=asc" class="dropdown-item ">Rating (low to
+                        high)</a>
+                    <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">Rating (high to
+                        low)</a>
+                </div>
+            </div>
+
+            <div class="d-inline">
+                <button id="wet-suits-filter-btn" type="button" class="btn btn-dark dropdown-toggle mx-auto d-inline"
+                    data-toggle="dropdown">
+                    Wet Suits
+                </button>
+                <div class="dropdown-menu" aria-labelledby="wet-suits-filter-btn">
+                    <a class="dropdown-item" href="{% url 'products' %}?category=wet_suit">All Wetsuits</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?subcategory=mens_wetsuit">Mens Wetsuits</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?subcategory=ladies_wetsuit">Ladies Wetsuits</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?subcategory=kids_wetsuit">Kids Wetsuits</a>
+                </div>
+            </div>
+
+            <div class="d-inline">
+                <button type="button" class="btn btn-dark dropdown-toggle mx-auto d-inline" data-toggle="dropdown">
+                    Surf Boards
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="{% url 'products' %}?category=surf_board">All Surf Boards</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?subcategory=short_board">Short Boards</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?subcategory=long_board">Long Boards</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?subcategory=body_board">Body Boards</a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <!-- Product Filters-->
+    <!-- <div class="row">
         <div class="col-md-6 dropdown p-3">
             <button type="button" class="btn btn-dark dropdown-toggle mx-auto d-block" data-toggle="dropdown">
                 Wet Suits
@@ -50,7 +80,7 @@
                 <a class="dropdown-item" href="{% url 'products' %}?subcategory=body_board">Body Boards</a>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="row">
         <div class="col-12 col-md-6 order-md-first">
             <p class="text-muted mt-3 text-center text-md-left  product-text">

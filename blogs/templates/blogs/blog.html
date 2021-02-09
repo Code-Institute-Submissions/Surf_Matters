@@ -19,7 +19,7 @@
     <div class="row">
        <!--Blog code taken from https://startbootstrap.com/template/blog-home-->
       <!-- Blog Entries Column -->
-      <div class="col-md-8">
+      <div class="col-md-8 order-md-first">
          <!-- Blog Post -->
         {% for blog in blogs %}
         <div class="card mb-4">
@@ -37,7 +37,7 @@
         {% endfor %}
       </div>
        <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
+      <div class="col-md-4 order-first">
         <!-- Side Widget -->
         <div class="card my-4">
           <h5 class="card-header blog-heading">Budding blogger?</h5>

@@ -9,7 +9,8 @@ from .models import Product, Subcategory, Category
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
-    products = Product.objects.all()
+    lessons_category = Category.objects.filter(name__icontains="Lesson").first()
+    products = Product.objects.filter(~Q(category__name__icontains='Lesson')) if request.GET.get('category') != lessons_category.name else Product.objects.filter(Q(category__name__icontains='Lesson'))
     query = None
     categories = None
     subcategories = None
