@@ -18,7 +18,7 @@
     <!-- Page Content -->
     <div class="row">
         <!-- Post Content Column -->
-        <div class="col-lg-8">
+        <div class="col-lg-8 order-md-first">
             <h1 class="mt-4 blog-heading">{{ blog.title }} </h1>
             <p class="lead blog-text">
                 written by: {{ blog.author }}
@@ -45,7 +45,7 @@
    
                     </div>
                     {% endfor %}
-                    <div class="col-md-8 card my-4  mt-3 ">
+                    <div class="col-md-8 card my-4 mt-3 ">
                         <div class="card-body">
                             {% if new_comment %}
                             <div class="alert alert-success .blog-text" role="alert">
@@ -53,7 +53,7 @@
                             </div>
                             {% else %}
                             <h4 class="blog-heading">Please leave a comment.</h4>
-                            <form method="post" class="comments-form" style="margin-top: 1.3em;">
+                            <form method="post" class="comments-form">
                                 {{ comment_form.as_p }}
                                 {% csrf_token %}
                                 <button type="submit" class="btn btn-dark  btn-lg">Submit</button>
@@ -66,14 +66,14 @@
         </div>
 
         <!-- Sidebar Widgets Column -->
-        <div class="col-md-4">
+        <div class="col-md-4 order-first">
             <div class="card my-4">
                 <h5 class="card-header blog-heading">We would love to hear from you!</h5>
                 <div class="card-body">
                     <div class="row">
                         <div class="col">
                             <p class="blog-text"> 
-                                Please feel free to leave us a comment.
+                                Please feel free to leave us a comment below.
                             </p>
                         </div>
                         
