@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 
 from .models import UserProfile
+from .forms import UserProfileForm
 
 
 def user_profile(request):
@@ -9,9 +10,13 @@ def user_profile(request):
     """
     user_profile = get_object_or_404(UserProfile, user=request.user)
 
+    form = UserProfileForm(instance=user_profile)
+    orders = user_profile.orders.all()
+
     template = 'user_profiles/user_profile.html'
     context = {
-        'user_profile': user_profile
+        'form': form,
+        'orders': orders,
     }
 
     return render(request, template, context)

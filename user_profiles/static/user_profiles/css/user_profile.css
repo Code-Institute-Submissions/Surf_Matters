@@ -1,0 +1,9 @@
+#profile-form .form-control {
+    color: #0F1110;
+    font-family: 'Roboto', sans-serif;
+}
+
+#profile-form input::placeholder {
+    color: #D8D9D7;
+    font-family: 'Roboto', sans-serif;
+}

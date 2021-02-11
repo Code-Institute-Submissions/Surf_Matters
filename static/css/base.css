@@ -169,7 +169,7 @@ html {
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
+    border-color: #0F1110;
     border-radius: 0;
 }
 
@@ -193,8 +193,8 @@ html {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #0F1110;
+    border: 1px solid #0F1110;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
