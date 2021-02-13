@@ -126,17 +126,12 @@
                         </span>
                         <span class="font-weight-bold">Adjust Bag</span>
                     </a>
-                    <button id="submit-button" class="btn btn-black rounded-0">
+                    <button id="submit-button" class="btn btn-black rounded-0 order-buton">
                         <span class="font-weight-bold checkout-text">Complete Order</span>
                         <span class="icon">
                             <i class="fas fa-lock"></i>
                         </span>
                     </button>
-                    <!-- Overlay and spinner created from https://jsfiddle.net/mshaker88/u41rgq3e/ -->
-                    <div id="overlay" style="display:none;">
-                        <div class="spinner"></div>
-                        <br /> Processing...
-                    </div>
                     <p class="small text-danger my-0">
                         <span class="icon">
                             <i class="fas fa-exclamation-circle"></i>
@@ -149,7 +144,11 @@
         </div>
     </div>
 </div>
-
+                    <!-- Overlay and spinner created from https://jsfiddle.net/mshaker88/u41rgq3e/ -->
+                    <div id="overlay" style="display:none;">
+                        <div class="spinner"></div>
+                        <br /> Processing...
+                    </div>
 {% endblock %}
 
 {% block postloadjs %}
