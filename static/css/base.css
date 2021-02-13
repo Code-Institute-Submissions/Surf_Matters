@@ -98,7 +98,8 @@ html {
 .product-text,
 .blog-text,
 .bag-text,
-.checkout-text {
+.checkout-text,
+.profile-text {
     font-family: 'Roboto', sans-serif;
 }
 
