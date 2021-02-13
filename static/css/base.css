@@ -215,3 +215,7 @@ html {
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
 }
+
+@media screen and (max-width: 767px) {
+.mobile-spacing {margin-top:10px;}
+}
