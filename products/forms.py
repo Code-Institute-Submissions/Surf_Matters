@@ -13,7 +13,8 @@ class AmendProductsForm(forms.ModelForm):
         categories = Category.objects.all()
         subcategories = Subcategory.objects.all()
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
-        sub_friendly_names = [(s.id, s.get_friendly_name()) for s in subcategories]
+        sub_friendly_names = [(
+            s.id, s.get_friendly_name()) for s in subcategories]
 
         self.fields['category'].choices = friendly_names
         self.fields['subcategory'].choices = sub_friendly_names
