@@ -41,9 +41,11 @@
                 </p>
                 {% endif %}
                 {% if product.rating %}
-                <small class="text-muted product-text"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                <p>
+                <small class="text-muted product-text mb-1"><i class="fas fa-star mr-1 rating-icon"></i>{{ product.rating }} / 5</small>
                 {% else %}
-                <small class="text-muted product-text">No Rating</small>
+                <small class="text-muted product-text mb-1">No Rating</small>
+                </p>
                 {% endif %}
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
@@ -53,14 +55,14 @@
                 {% endif %}
                 <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active product-heading" data-toggle="tab" href="#home">Description</a>
+                        <a class="nav-link active product-heading product-tab" data-toggle="tab" href="#home">Description</a>
 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link product-heading" data-toggle="tab" href="#menu1">Delivery</a>
+                        <a class="nav-link product-heading product-tab" data-toggle="tab" href="#menu1">Delivery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link product-heading" data-toggle="tab" href="#menu2">Returns</a>
+                        <a class="nav-link product-heading product-tab" data-toggle="tab" href="#menu2">Returns</a>
                     </li>
                 </ul>
 
@@ -115,13 +117,13 @@
                                 </div>
 
                                 <div class="col{% if s %}-12 mt-2{% endif %}">
-                                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mobile-spacing">
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
                                         <span class="text-uppercase">Keep Shopping</span>
                                     </a>
-                                    <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5"
+                                    <input type="submit" class="btn btn-dark rounded-0 text-uppercase mobile-spacing"
                                         value="Add to Bag">
                                 </div>
                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">

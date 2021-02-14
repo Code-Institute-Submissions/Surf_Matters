@@ -119,6 +119,14 @@ html {
     padding-bottom: 0.55rem;
 }
 
+.product-tab {
+    color: #0F1110;
+}
+
+.rating-icon {
+    color: #D9A91A;
+}
+
 /* Blog Comments*/
 .comments-form {
     margin-top: 1.3rem;
@@ -246,4 +254,10 @@ html {
 
 @media screen and (max-width: 767px) {
 .mobile-spacing {margin-top:10px;}
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
 }
