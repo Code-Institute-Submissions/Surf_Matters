@@ -18,15 +18,21 @@ def all_products(request):
     direction = None
 
     if request.GET:
+        # Check if sort in request
         if 'sort' in request.GET:
+            # Set sort to these variables
             sortkey = request.GET['sort']
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
+                # Annotate currwent list with a new field
                 products = products.annotate(lower_name=Lower('name'))
+            if sortkey == 'subcategory':
+                sortkey == 'subcategory__name'
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
+                # Check if direction is descending
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
