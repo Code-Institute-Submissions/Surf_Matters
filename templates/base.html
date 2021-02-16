@@ -40,7 +40,7 @@
 </head>
 
 <body>
-
+    <!--Banner-->
     <header class="container-fluid">
         <div class="row text-center">
             <div class="col-sm-12 col-md-4 text-white top-banner d-sm-none d-md-block"></div>
@@ -61,13 +61,13 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                            <a href="{% url 'add_product' %}" class="dropdown-item product-text">Product Management</a>
                             {% endif %}
-                            <a href="{% url 'user_profile' %}" class="dropdown-item">My Profile</a>
-                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            <a href="{% url 'user_profile' %}" class="dropdown-item product-text">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item product-text">Logout</a>
                             {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item product-text">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item product-text">Login</a>
                             {% endif %}
                         </div>
                     </li>
@@ -121,7 +121,7 @@
             <!--Search form-->
             <form method="GET" action="{% url 'products' %}">
                 <div class="input-group w-100">
-                    <input class="form-control border border-black rounded-0" type="text" name="q"
+                    <input class="form-control border border-black rounded-0 product-text" type="text" name="q"
                         placeholder="Search for products">
                     <div class="input-group-append">
                         <button class="form-control btn btn-black border border-black rounded-0" type="submit">
@@ -185,22 +185,22 @@
                     <h5 class="text-uppercase footer-title">Links</h5>
                     <ul class="list-inline">
                         <li class="list-inline-item">
-                            <a href="" target="_blank">
+                            <a href="https://www.facebook.com/" target="_blank">
                                 <i class="fab fa-facebook-square social-links"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="" target="_blank">
+                            <a href="https://www.instagram.com/" target="_blank">
                                 <i class="fab fa-instagram-square social-links"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="" target="_blank">
+                            <a href="https://twitter.com/?lang=en-gb" target="_blank">
                                 <i class="fab fa-twitter-square social-links"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a href="" target="_blank">
+                            <a href="https://www.pinterest.co.uk/pinterest/" target="_blank">
                                 <i class="fab fa-pinterest-square social-links"></i>
                             </a>
                         </li>
@@ -226,7 +226,7 @@
 
         <!-- Copyright -->
         <div class="footer-text text-center py-3">© 2020 Copyright:
-            <p>Adam Parker</p>
+            <p class="footer-text">Adam Parker</p>
         </div>
         <!-- Copyright -->
 

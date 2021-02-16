@@ -11,6 +11,7 @@
             <hr class="w-75">
         </div>
     </div>
+    <!--Mobile Bag View-->
      <div class="row">
             <div class="col">
                 {% if bag_items %}
@@ -45,6 +46,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--Larger Screen Bag View-->
                     <div class="table-responsive rounded d-none d-md-block">
                         <table class="table table-sm table-borderless">
                             <thead class="text-black">
@@ -76,7 +78,7 @@
                                     </td>
                                 </tr>
                             {% endfor %}
-                            <tr>
+                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
                                     {% include "bag/bag_total.html" %}
                                 </td>

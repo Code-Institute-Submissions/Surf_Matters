@@ -99,7 +99,8 @@ html {
 .blog-text,
 .bag-text,
 .checkout-text,
-.profile-text {
+.profile-text
+{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -142,6 +143,10 @@ html {
     top: 72px;
     right: 15px;
     z-index: 99999999999;
+}
+
+.toast-text {
+    font-family: 'Roboto', sans-serif;
 }
 
 .toast-message {

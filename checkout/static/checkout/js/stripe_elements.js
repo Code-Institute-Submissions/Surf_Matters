@@ -111,6 +111,6 @@ form.addEventListener('submit', function(ev) {
 
 $(document).ready(function() {
 	$('button').click(function(){
-		$('#overlay').fadeIn().delay(2000).fadeOut();
+		$('#overlay').fadeIn().delay(4000).fadeOut();
 	});
 });

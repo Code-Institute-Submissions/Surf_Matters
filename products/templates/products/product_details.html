@@ -35,7 +35,7 @@
                 <p class="lead mb-0 text-left font-weight-bold product-text">£ {{ product.price }}</p>
                 {% if product.subcategory %}
                 <p class="small">
-                    <a class="text-muted" href="{% url 'products' %}?subcategory={{ product.subcategory.name }}">
+                    <a class="text-muted product-text" href="{% url 'products' %}?subcategory={{ product.subcategory.name }}">
                         <i class="fas fa-angle-right mr-1"></i>{{ product.subcategory.friendly_name }}
                     </a>
                 </p>
@@ -48,7 +48,7 @@
                 </p>
                 {% endif %}
                 {% if request.user.is_superuser %}
-                <small class="ml-3">
+                <small class="ml-3 product-text">
                     <a href="{% url 'edit_product' product.id %}">Edit</a> |
                     <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                 </small>
@@ -78,7 +78,7 @@
                                 {% with product.has_sizes as s %}
                                 {% if s %}
                                 <div class="col-12">
-                                    <p><strong>Size:</strong></p>
+                                    <p class="product-text"><strong>Size:</strong></p>
                                     <select class="form-control rounded-0 w-50" name="product_size"
                                         id='id_product_size'>
                                         <option value="xs">XS</option>
@@ -121,7 +121,7 @@
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
-                                        <span class="text-uppercase">Keep Shopping</span>
+                                        <span class="text-uppercase product-text">Keep Shopping</span>
                                     </a>
                                     <input type="submit" class="btn btn-dark rounded-0 text-uppercase mobile-spacing"
                                         value="Add to Bag">
