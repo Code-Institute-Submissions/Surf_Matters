@@ -108,8 +108,8 @@
                     </a>
                 </li>
                 <li class="nav-item navbar-link">
-                    <a class="nav-link" href="{% url 'products' %}?category=surf_lesson">
-                        <h3 class="navbar-text" id="surf_lesson">Book a Lesson</h3>
+                    <a class="nav-link" id="surf_lesson" href="{% url 'products' %}?category=surf_lesson">
+                        <h3 class="navbar-text">Book a Lesson</h3>
                     </a>
                 </li>
                 <li class="nav-item navbar-link">
@@ -237,6 +237,8 @@
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
+
+
      
     {% endblock %}
 
