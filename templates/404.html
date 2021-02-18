@@ -1,6 +1,5 @@
-{% extends base.html %}
+{% extends "base.html" %}
 {% load static %}
-
 {% block content %}
 
    <div class="container mb-2">
@@ -13,8 +12,13 @@
     </div>
     <div class="row">
         <div class="col">
-            <img src="{{ MEDIA_URL }}surfing_image_3.jpg" class="img-fluid" alt="Responsive image">
+            <img src="{{ MEDIA_URL }}surf_wipeout_1.jpg" class="img-fluid" alt="Responsive image">
         </div>
+        <div class="col">
+            <p>Click here to go back</p>
+            <a href="{% url 'home_page' %}" class="btn btn-lg">Go Back</a>
+        </div>
+
     </div>
 
 </div>
