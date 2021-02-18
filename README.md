@@ -26,3 +26,7 @@ information and previous order history.
 
 The deployed website can be viewed here -[Surf Matters](https://adamp-surf-matters.herokuapp.com/)
 
+## **UX**
+
+[User Stories](files/Surf_Matters_User_Stories.xlsx)
+
