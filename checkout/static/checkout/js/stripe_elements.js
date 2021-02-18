@@ -93,8 +93,7 @@ form.addEventListener('submit', function(ev) {
                     </span>
                     <span>${result.error.message}</span>`;
                 $(errorDiv).html(html);
-                $('#payment-form').fadeToggle(100);
-                $('#loading-overlay').fadeToggle(100);
+                
                 card.update({ 'disabled': false});
                 $('#submit-button').attr('disabled', false);
             } else {
@@ -110,7 +109,7 @@ form.addEventListener('submit', function(ev) {
 });
 
 $(document).ready(function() {
-	$('button').click(function(){
-		$('#overlay').fadeIn().delay(4000).fadeOut();
+	$('#submit-button').click(function(){
+		$('#overlay').fadeIn().delay(3500).fadeOut();
 	});
 });
