@@ -28,5 +28,15 @@ The deployed website can be viewed here -[Surf Matters](https://adamp-surf-matte
 
 ## **UX**
 
-[User Stories](files/Surf_Matters_User_Stories.xlsx)
+The website was designed to be responsive and easy to use and navigate. I designed a home page with an image carousel
+of various surfing images, with buton links to the products, surf lessons and blog.
+
+The site is easy to navigate, users can use the menu links in the navigation bar at the top of the page,
+and each page has a consistent layout to it with the header and footer replicatred across the site. 
+this gives users a familiar feel to each page when navigating the site.
+
+I chose black and white as the main colours for the site as the surfing, product and blog images
+are quite colourful due to the nature of their content.
+
+[User Stories](./files/Surf_Matters_User_Stories.xlsx)
 
