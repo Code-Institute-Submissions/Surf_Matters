@@ -38,5 +38,27 @@ this gives users a familiar feel to each page when navigating the site.
 I chose black and white as the main colours for the site as the surfing, product and blog images
 are quite colourful due to the nature of their content.
 
+### _**Site Goals**_
+
+The overall aim of the site is to enable users to access the online store for the Surf Matters
+surf shop. It is designed to be somewhere that Surf Matters can showcase their products online and 
+also sell other services they offer to a far wider audience than the just the people who visit their
+shop. 
+
+The inclusion of a blog is designed to give the store a community feel, users are encouraged to email in an 
+article for the site owner to approve before posting.
+
+### _**Target Audience**_ 
+
+The website is aimed at but not restricted to the following users :
+
+* People wanting to buy surf products.
+* People wanting to learn to surf.
+* Site owner to increase sales and manage products.
+* People wanting to find surf shops local to them.
+
+
 [User Stories](./files/Surf_Matters_User_Stories.xlsx)
+
+
 
