@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 
-   <div class="container mb-2">
+<div class="container mb-2">
     <div class="row">
         <div class="col text-center">
             <hr class="w-75">
@@ -15,15 +15,15 @@
             <img src="{{ MEDIA_URL }}surf_wipeout_1.jpg" class="img-fluid" alt="Responsive image">
         </div>
     </div>
-        <div class="row">
-        <div class="col mx-auto">
+    <div class="row">
+        <div class="col d-flex justify-content-center">
             <p class="product-text">Click here to go back</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
             <a href="{% url 'home_page' %}" class="btn btn-lg btn-dark rounded-1">Go Back</a>
         </div>
-        </div>
-
-
     </div>
-
 </div>
 {% endblock %}
