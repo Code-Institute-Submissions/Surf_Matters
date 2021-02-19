@@ -91,8 +91,11 @@ The website is aimed at but not restricted to the following users :
 
 ### _**Database Schema**_
 
+The databases were stored in [sqlite3](https://docs.python.org/3/library/sqlite3.html) in development, and [heroku postgres](https://www.heroku.com/postgres) in
+production. A number of different models are used throughout the site as detailed in the database schema below.
+
 <br>
 <p align="center">
-    <img width="600" height="400" src="media/Surf_Matters_DB_Schema.png">
+    <img width="700" height="500" src="media/Surf_Matters_DB_Schema.png">
 </p>
 <br>
