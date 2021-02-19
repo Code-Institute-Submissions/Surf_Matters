@@ -99,3 +99,20 @@ production. A number of different models are used throughout the site as detaile
     <img width="700" height="500" src="media/Surf_Matters_DB_Schema.png">
 </p>
 <br>
+
+#### Product model
+
+The product model holds all the information relating to products sold in the store, it has two froeign keys, those being
+category and subcategory, and is also a Foreign Key to the OrderLineItem model.
+
+| Field       | Type                |
+|-------------|---------------------|
+| category    | models.ForeignKey   |
+| subcategory | models.ForeignKey   |
+| sku         | models.Charfield    |
+| name        | models.Charfield    |
+| description | models.TextField    |
+| has_sizes   | models.BooleanField |
+| price       | models.DecimalField |
+| rating      | models.DecimalField |
+| image       | models.ImageField   |
