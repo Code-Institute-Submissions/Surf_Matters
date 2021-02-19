@@ -117,7 +117,7 @@ category and subcategory, and is also a Foreign Key to the OrderLineItem model.
 | rating      | models.DecimalField |
 | image       | models.ImageField   |
 
-### Category and Subcategory models
+#### Category and Subcategory models
 
 The Category and Subcategory models are identical, both contain two fields. A name field which is used in the back end. The 
 other field is a friendly_name which is used to display the name to the end user.
@@ -127,7 +127,7 @@ other field is a friendly_name which is used to display the name to the end user
 | name          | models.Charfield |
 | friendly_name | models.Charfield |
 
-### Order model
+#### Order model
 
 The order model is created in the checkout app, and is used to handle all orders across the site. It takes
 the user_profile as a Foreign key to bring across registered users stored details.
@@ -144,7 +144,7 @@ the user_profile as a Foreign key to bring across registered users stored detail
 | town_or_city     | models.CharField     |
 | county           | models.CharField     |
 | post_code        | models.CharField     |
-| country          | models.CharField     |
+| country          | models.CountryField  |
 | date             | models.DateTimeField |
 | delivery_cost    | models.DecimalField  |
 | order_total      | models.DecimalField  |
@@ -152,8 +152,11 @@ the user_profile as a Foreign key to bring across registered users stored detail
 | original_bag     | models.TextField     |
 | stripe_pid       | models.CharField     |
 
-### OrderLineItem model
+#### OrderLineItem model
 
+The order line item model is used to create an order line for each product in the shopping bag. It takes in the order as a 
+Foreign Key this enable us to access orders and make certain calls on them. It also takes in product as a Foreign Key, which
+gives it access to all the associated fields of that model.
 
 
 | Field          | Type                |
@@ -163,3 +166,50 @@ the user_profile as a Foreign key to bring across registered users stored detail
 | product_size   | models.CharField    |
 | quantity       | models.IntegerField |
 | lineitem_total | models.DecimalField |
+
+#### UserProfile model
+
+The UserProfile model is used to store a customers default delivery information, and also to provide a record of their
+order history. It has **user** as a OneToOneField which specifies that each user can only have one profile,
+and each profile can be attached to one user.
+
+| Field                    | Type                 |
+|--------------------------|----------------------|
+| user                     | models.OneToOneField |
+| default_phone_number     | models.CharField     |
+| default_street_address_1 | models.CharField     |
+| default_street_address_2 | models.CharField     |
+| default_town_or_city     | models.CharField     |
+| default_county           | models.CharField     |
+| default_country          | models.CountryField  |
+| default_postcode         | models.CharField     |
+
+#### Blog model
+
+The blog model holds all the data for the individual blogs. The slug field is used to create a URL
+for each individual blog item.
+
+
+| Field   | Type                 |
+|---------|----------------------|
+| title   | models.Charfield     |
+| slug    | models.SlugField     |
+| opening | models.TextField     |
+| body    | models.TextField     |
+| date    | models.DateTimeField |
+| image   | models.ImageField    |
+| author  | models.Charfield     |
+
+
+#### Comment model
+
+The comment mdel is used to add comments to the blog articles.
+
+| Field   | Type                 |
+|---------|----------------------|
+| post    | models.ForeignKey    |
+| name    | models.Charfield     |
+| email   | models.EmailField    |
+| comment | models.TextField     |
+| date    | models.DateTimeField |
+| active  | modesl.BooleanField  |
