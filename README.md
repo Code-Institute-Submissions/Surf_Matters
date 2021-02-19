@@ -116,3 +116,50 @@ category and subcategory, and is also a Foreign Key to the OrderLineItem model.
 | price       | models.DecimalField |
 | rating      | models.DecimalField |
 | image       | models.ImageField   |
+
+### Category and Subcategory models
+
+The Category and Subcategory models are identical, both contain two fields. A name field which is used in the back end. The 
+other field is a friendly_name which is used to display the name to the end user.
+
+| Field         | Type             |
+|---------------|------------------|
+| name          | models.Charfield |
+| friendly_name | models.Charfield |
+
+### Order model
+
+The order model is created in the checkout app, and is used to handle all orders across the site. It takes
+the user_profile as a Foreign key to bring across registered users stored details.
+
+| Field            | Type                 |
+|------------------|----------------------|
+| order_number     | models.CharField     |
+| user_profile     | models.ForeignKey    |
+| full_name        | models.CharField     |
+| email            | models.EmailField    |
+| phone_number     | models.CharField     |
+| street_address_1 | models.CharField     |
+| street_address_2 | models.CharField     |
+| town_or_city     | models.CharField     |
+| county           | models.CharField     |
+| post_code        | models.CharField     |
+| country          | models.CharField     |
+| date             | models.DateTimeField |
+| delivery_cost    | models.DecimalField  |
+| order_total      | models.DecimalField  |
+| grand_total      | models.DecimalField  |
+| original_bag     | models.TextField     |
+| stripe_pid       | models.CharField     |
+
+### OrderLineItem model
+
+
+
+| Field          | Type                |
+|----------------|---------------------|
+| order          | models.ForeignKey   |
+| product        | models.ForeignKey   |
+| product_size   | models.CharField    |
+| quantity       | models.IntegerField |
+| lineitem_total | models.DecimalField |
