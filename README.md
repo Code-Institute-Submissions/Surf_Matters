@@ -203,7 +203,7 @@ for each individual blog item.
 
 #### Comment model
 
-The comment mdel is used to add comments to the blog articles.
+The comment model is used to add comments to the blog articles.
 
 | Field   | Type                 |
 |---------|----------------------|
