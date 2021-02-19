@@ -88,3 +88,11 @@ The website is aimed at but not restricted to the following users :
 | 19            | Site User          | Read blog articles                           | Read about a subject of interest to me                                         |
 | 20            | Site User          | Comment on a blog article                    | Let the author know how I felt about their post.   
 
+
+### _**Database Schema**_
+
+<br>
+<p align="center">
+    <img width="600" height="400" src="media/Surf_Matters_DB_Schema.png">
+</p>
+<br>
