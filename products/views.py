@@ -11,8 +11,12 @@ from .forms import AmendProductsForm
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
-    lessons_category = Category.objects.filter(name__icontains="Lesson").first()
-    products = Product.objects.filter(~Q(category__name__icontains='Lesson')) if request.GET.get('category') != lessons_category.name else Product.objects.filter(Q(category__name__icontains='Lesson'))
+    lessons_category = Category.objects.filter(
+        name__icontains="Lesson").first()
+    products = Product.objects.filter(~Q(
+        category__name__icontains='Lesson')) if request.GET.get(
+            'category') != lessons_category.name else Product.objects.filter(
+            Q(category__name__icontains='Lesson'))
     query = None
     categories = None
     subcategories = None

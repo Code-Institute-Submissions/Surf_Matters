@@ -33,16 +33,15 @@
             <div class="media mb-4">
                 <div class="media-body">
                     <h2 class="mt-0 blog-heading">Comments...</h2>
-                       {% for comment in comments %}
+                    {% for comment in comments %}
                     <div class="comments blog-text">
                         <p class="font-weight-bold blog-text">
                             {{ comment.name }}
                             <span class=" text-muted font-weight-normal blog-text">
                                 {{ comment.date }}
                             </span>
-                         </p>
-                          <p class="blog-text">{{ comment.comment | linebreaks }}</p>
-   
+                        </p>
+                        <p class="blog-text">{{ comment.comment | linebreaks }}</p>
                     </div>
                     {% endfor %}
                     <div class="col-md-8 card my-4 mt-3 ">
@@ -64,7 +63,6 @@
                 </div>
             </div>
         </div>
-
         <!-- Sidebar Widgets Column -->
         <div class="col-md-4 order-first">
             <div class="card my-4">
@@ -72,17 +70,14 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col">
-                            <p class="blog-text"> 
+                            <p class="blog-text">
                                 Please feel free to leave us a comment below.
                             </p>
                         </div>
-                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-
 {% endblock %}

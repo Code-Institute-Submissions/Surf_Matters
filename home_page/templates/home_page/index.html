@@ -2,9 +2,7 @@
 {% load static %}
 
 {% block page_header %}
-
 {% endblock %}
-
 
 {% block content %}
 <!--Fullscreen bootstrap carousel taken from https://codepen.io/SitePoint/pen/ZbGwqe-->
@@ -19,18 +17,22 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="carousel-item">
-            <img class="d-block w-100" src="{{ MEDIA_URL }}surfing_image_3.jpg" data-color="lightblue" alt="First Image">
+            <img class="d-block w-100" src="{{ MEDIA_URL }}surfing_image_3.jpg" data-color="lightblue"
+                alt="First Image">
             <div class="carousel-caption d-md-block">
                 <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop
+                        Now</a>
                 </h4>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="{{ MEDIA_URL }}surfing_image_2.jpg" data-color="firebrick" alt="Second Image">
+            <img class="d-block w-100" src="{{ MEDIA_URL }}surfing_image_2.jpg" data-color="firebrick"
+                alt="Second Image">
             <div class="carousel-caption d-md-block">
                 <h4>
-                    <a href="{% url 'products' %}?category=surf_lesson" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Book a Lesson</a>
+                    <a href="{% url 'products' %}?category=surf_lesson"
+                        class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Book a Lesson</a>
                 </h4>
             </div>
         </div>
@@ -38,7 +40,8 @@
             <img class="d-block w-100" src="{{ MEDIA_URL }}surfing_image_4.jpg" data-color="violet" alt="Third Image">
             <div class="carousel-caption d-md-block">
                 <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop
+                        Now</a>
                 </h4>
             </div>
         </div>
@@ -46,7 +49,8 @@
             <img class="d-block w-100" src="{{ MEDIA_URL }}surfing_image_1.jpg" data-color="violet" alt="Third Image">
             <div class="carousel-caption d-md-block">
                 <h4>
-                    <a href="{% url 'blogs' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Read our Blog</a>
+                    <a href="{% url 'blogs' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Read
+                        our Blog</a>
                 </h4>
             </div>
         </div>
