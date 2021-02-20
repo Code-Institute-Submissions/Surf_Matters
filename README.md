@@ -213,3 +213,23 @@ The comment model is used to add comments to the blog articles.
 | comment | models.TextField     |
 | date    | models.DateTimeField |
 | active  | modesl.BooleanField  |
+
+<div align="center">
+
+## **Wireframes**
+
+</div>
+
+### _**Home Page**_
+<br>
+<p align="center">
+    <img width="600" height="400" src="files/home_page.png">
+</p>
+<br>
+
+### _**Products Page**_
+<br>
+<p align="center">
+    <img width="600" height="400" src="files/products_page.png">
+</p>
+<br>
