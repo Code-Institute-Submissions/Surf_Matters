@@ -89,7 +89,7 @@ The website is aimed at but not restricted to the following users :
 | 20            | Site User          | Comment on a blog article                    | Let the author know how I felt about their post.   
 
 
-### _**Database Schema**_
+## _**Database Schema**_
 
 The databases were stored in [sqlite3](https://docs.python.org/3/library/sqlite3.html) in development, and [heroku postgres](https://www.heroku.com/postgres) in
 production. A number of different models are used throughout the site as detailed in the database schema below.
@@ -296,3 +296,21 @@ The comment model is used to add comments to the blog articles.
     <img width="600" height="400" src="files/profile_page.png">
 </p>
 <br>
+
+## **Features**
+
+* **Navigation Bar** - The site features a consistent navigation bar, it uses [Bootstrap](https://getbootstrap.com/docs/4.0/components/navbar/) responsive navbar, it is easy to use and 
+collapses down on smaller devices.
+
+* **Search Box** - The navigation bar has a search box, where users can enter search terms to search for relevant products in the store.
+
+* **Product Sorting** - Users have the ability to sort products by name, price and rating.
+
+* **Product Filtering** - Users can filter products by category and subcsategory.
+
+* **Shopping bag** - Users are able to add products to their shopping bag whilst browsing the store. When viewing the bag they can update (i.e. change sizes), or
+remove products they no longer wish to purchase.
+
+* **Toast Messages** - The site features [Bootstrap](https://getbootstrap.com/docs/4.3/components/toasts/) toast messages. Users get success messages when performing operations
+such as logging in and out and adding products to their bag. Users also reveive error, info and warning messsages. 
+
