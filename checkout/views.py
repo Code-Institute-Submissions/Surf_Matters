@@ -74,7 +74,7 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        # If it has a size iterate through and create a line item
+                        # If has size iterate through and create a line item
                         for size, quantity in item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
@@ -174,7 +174,8 @@ def checkout_complete(request, order_number):
                 'default_county': order.county,
             }
             # Create an instance of user profile form
-            user_profile_form = UserProfileForm(profile_data, instance=user_profile)
+            user_profile_form = UserProfileForm(
+                profile_data, instance=user_profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
 

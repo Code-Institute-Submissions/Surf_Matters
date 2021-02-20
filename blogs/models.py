@@ -5,7 +5,7 @@ from django.db import models
 
 class Blog(models.Model):
     title = models.CharField(max_length=254)
-    slug = models.SlugField(max_length = 250, null = True, blank = True)
+    slug = models.SlugField(max_length=250, null=True, blank=True)
     opening = models.TextField(null=True)
     body = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
