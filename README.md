@@ -227,9 +227,72 @@ The comment model is used to add comments to the blog articles.
 </p>
 <br>
 
+### _**Registration Page**_
+<br>
+<p align="center">
+    <img width="600" height="400" src="files/registration_page.png">
+</p>
+<br>
+
+### _**Login Page**_
+<br>
+<p align="center">
+    <img width="600" height="400" src="files/login_page.png">
+</p>
+<br>
+
 ### _**Products Page**_
 <br>
 <p align="center">
     <img width="600" height="400" src="files/products_page.png">
+</p>
+<br>
+
+### _**Individual Product Page**_
+<br>
+<p align="center">
+    <img width="600" height="400" src="files/individual_product_page.png">
+</p>
+<br>
+
+### _**Surf Lessons Page**_
+<br>
+<p align="center">
+    <img width="600" height="400" src="files/surf_lessons_page.png">
+</p>
+<br>
+
+### _**Individual Surf Lessons Page**_
+<br>
+<p align="center">
+    <img width="600" height="400" src="files/individual_surf Lesson_page.png">
+</p>
+<br>
+
+### _**Blog Page**_
+<br>
+<p align="center">
+    <img width="600" height="400" src="files/blog_page.png">
+</p>
+<br>
+
+### _**Checkout Page**_
+<br>
+<p align="center">
+    <img width="600" height="400" src="files/checkout_page.png">
+</p>
+<br>
+
+### _**Shopping Bag Page**_
+<br>
+<p align="center">
+    <img width="600" height="400" src="files/shopping_bag_page.png">
+</p>
+<br>
+
+### _**Profile Page**_
+<br>
+<p align="center">
+    <img width="600" height="400" src="files/profile_page.png">
 </p>
 <br>
