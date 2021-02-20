@@ -314,3 +314,46 @@ remove products they no longer wish to purchase.
 * **Toast Messages** - The site features [Bootstrap](https://getbootstrap.com/docs/4.3/components/toasts/) toast messages. Users get success messages when performing operations
 such as logging in and out and adding products to their bag. Users also reveive error, info and warning messsages. 
 
+* **Account Registration** - Users are able to enter their details and register for an account.
+
+* **Profile Page** - Users get a profile page, which stores their default delivery information and previous order history.
+
+* **Secure Checkout** - User can checkout and purchase goods securely, the site utilises [Stripe](https://stripe.com/gb), a secure online payment
+processing facility.
+
+* **Blog Comments** - Users are able to add their comments to the blog articles, using a form at the bottom of each blog article. The comments
+are then displayed underneath the article.
+
+## **Technologies Used**
+
+[HTML5](https://en.wikipedia.org/wiki/HTML5) - Used to provide the structure and content of the templates.
+
+[CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - Provides some of the styling for the site.
+
+[Bootstrap](https://getbootstrap.com/) - Utilised for a lot of the styling of the site such as prodcut card and forms. Also used to make the site responsive.
+
+[Python](https://www.python.org/) - The main code used in the back end with Django.
+
+[Django](https://www.djangoproject.com/) - A Python web framework used to create the website.
+
+[Django allauth](https://django-allauth.readthedocs.io/en/latest/index.html) - Used for account authentication, registration and account management.
+
+[Django crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Used for styling the websites forms, to make them match the Bootstrap theme.
+
+[Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - Used as a templating language with Django and Python.
+
+[Stripe](https://stripe.com/gb) - A secure online payment processing facility, used for processing customer payments.
+
+[Sqlite3](https://www.sqlite.org/index.html) - Used for storing the databases when in develoment.
+
+[Heroku Postgres](https://www.heroku.com/postgres) - Used for storing the databases in production.
+
+[jQuery](https://jquery.com/) - USed for functionality of the site such as the Bootstrap carousel and stripe elements.
+
+[Google Fonts](https://fonts.google.com/) -  The site uses the Oswald and Roboto fonts.
+
+[Font Awesome](https://fontawesome.com/) - Used for the icons throughout the app.
+
+[Git](www.github.com) - Used for version control, and tracking changes in the repository.
+
+[Heroku](https://www.heroku.com/) - The platform used to deploy the app.
