@@ -14,14 +14,15 @@ def user_profile(request):
     Display the user's profile
     """
     user_profile = get_object_or_404(UserProfile, user=request.user)
-
+    # Create a new instance of the user profile form
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=user_profile)
         if form.is_valid():
             form.save()
             messages.success(request, 'Profile updated successfully')
         else:
-            messages.error(request, 'Update failed. Please ensure the form is valid.')
+            messages.error(
+                request, 'Update failed. Please ensure the form is valid.')
     else:
         form = UserProfileForm(instance=user_profile)
     orders = user_profile.orders.all()
@@ -41,7 +42,7 @@ def order_history(request, order_number):
 
     messages.info(request, (
         f'This is a past confirmation for order number {order_number}. '
-        'A confirmation email was sent on the order date.'
+        'A confirmation email was sent on day of the order.'
     ))
 
     template = 'checkout/checkout_complete.html'

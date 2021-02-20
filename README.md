@@ -223,77 +223,77 @@ The comment model is used to add comments to the blog articles.
 ### _**Home Page**_
 <br>
 <p align="center">
-    <img width="600" height="400" src="files/home_page.png">
+    <img width="600" height="400" src="files/wireframes/home_page.png">
 </p>
 <br>
 
 ### _**Registration Page**_
 <br>
 <p align="center">
-    <img width="600" height="400" src="files/registration_page.png">
+    <img width="600" height="400" src="files/wireframes/registration_page.png">
 </p>
 <br>
 
 ### _**Login Page**_
 <br>
 <p align="center">
-    <img width="600" height="400" src="files/login_page.png">
+    <img width="600" height="400" src="files/wireframes/login_page.png">
 </p>
 <br>
 
 ### _**Products Page**_
 <br>
 <p align="center">
-    <img width="600" height="400" src="files/products_page.png">
+    <img width="600" height="400" src="files/wireframes/products_page.png">
 </p>
 <br>
 
 ### _**Individual Product Page**_
 <br>
 <p align="center">
-    <img width="600" height="400" src="files/individual_product_page.png">
+    <img width="600" height="400" src="files/wireframes/individual_product_page.png">
 </p>
 <br>
 
 ### _**Surf Lessons Page**_
 <br>
 <p align="center">
-    <img width="600" height="400" src="files/surf_lessons_page.png">
+    <img width="600" height="400" src="files/wireframes/surf_lessons_page.png">
 </p>
 <br>
 
 ### _**Individual Surf Lessons Page**_
 <br>
 <p align="center">
-    <img width="600" height="400" src="files/individual_surf Lesson_page.png">
+    <img width="600" height="400" src="files/wireframes/individual_surf Lesson_page.png">
 </p>
 <br>
 
 ### _**Blog Page**_
 <br>
 <p align="center">
-    <img width="600" height="400" src="files/blog_page.png">
+    <img width="600" height="400" src="files/wireframes/blog_page.png">
 </p>
 <br>
 
 ### _**Checkout Page**_
 <br>
 <p align="center">
-    <img width="600" height="400" src="files/checkout_page.png">
+    <img width="600" height="400" src="files/wireframes/checkout_page.png">
 </p>
 <br>
 
 ### _**Shopping Bag Page**_
 <br>
 <p align="center">
-    <img width="600" height="400" src="files/shopping_bag_page.png">
+    <img width="600" height="400" src="files/wireframes/shopping_bag_page.png">
 </p>
 <br>
 
 ### _**Profile Page**_
 <br>
 <p align="center">
-    <img width="600" height="400" src="files/profile_page.png">
+    <img width="600" height="400" src="files/wireframes/profile_page.png">
 </p>
 <br>
 
@@ -357,3 +357,12 @@ are then displayed underneath the article.
 [Git](www.github.com) - Used for version control, and tracking changes in the repository.
 
 [Heroku](https://www.heroku.com/) - The platform used to deploy the app.
+
+## **Testing**
+
+A lot of the testing was carried out in develoment, using the developer tools in Google Chrome. I found this the most productive way of testing as I found
+that I could fix issues found as I went along. The developer tools also assisted me in testing the responsiveness of the site.
+
+### _**User Story Tests**_
+
+I have created a separate file for the user story tests, you can find them by clicking [here]()
