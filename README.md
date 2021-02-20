@@ -365,4 +365,5 @@ that I could fix issues found as I went along. The developer tools also assisted
 
 ### _**User Story Tests**_
 
-I have created a separate file for the user story tests, you can find them by clicking [here]()
+I have created a separate file for the user story tests, you can find them by clicking [here](files/user_story_tests/testing.md)
+
