@@ -70,7 +70,7 @@ The website is aimed at but not restricted to the following users :
 | 5             | Site User          | Register for an account.                     | Have a profile with saved details such as delivery address and previous orders.|
 | 6             | Site User          | Login and logout.                            | Access my personal information.                                                |
 | 7             | Site user          | Receive email comfirmation after registering.| Check that my account registration was a success.                              |
-| 8             | Site User          | Recover my password if I forget it.          | Maintain aceess to my account.                                                 |
+| 8             | Site User          | Recover my password if I forget it.          | Maintain access to my account.                                                 |
 |               |                    | **Purchasing and checkout**                  |                                                                                |
 | 9             | Shopper            | Select the size and quantity of a product.   | Make sure I purchase the correct product for me.                               |
 | 10            | Shopper            | View items in my bag before purchase.        | Check the cost and items that I want to buy.                                   |

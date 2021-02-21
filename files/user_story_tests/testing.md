@@ -19,7 +19,7 @@
 | 5             | Site User          | Register for an account.                     | Have a profile with saved details such as delivery address and previous orders.|
 | 6             | Site User          | Login and logout.                            | Access my personal information.                                                |
 | 7             | Site user          | Receive email comfirmation after registering.| Check that my account registration was a success.                              |
-| 8             | Site User          | Recover my password if I forget it.          | Maintain aceess to my account.                                                 |
+| 8             | Site User          | Recover my password if I forget it.          | Maintain access to my account.                                                 |
 |               |                    | **Purchasing and checkout**                  |                                                                                |
 | 9             | Shopper            | Select the size and quantity of a product.   | Make sure I purchase the correct product for me.                               |
 | 10            | Shopper            | View items in my bag before purchase.        | Check the cost and items that I want to buy.                                   |
@@ -80,7 +80,7 @@
 
 **_All tests performed and no errors found._**
 
-**User Story 3. Add items to a shopping bag.**
+**User Story 3 & 10 Add items to a shopping bag / View items in bag**
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the **Shop Now** link appear in the Navbar?
@@ -123,13 +123,15 @@
 7. Are you directed to a new page displaying the selected product image and information?
 8. Click the add to Bag button.
 9. Click the bag link at the top of the page.
-10. Are your items displayed in the bag, with a toral amount of your purchases at the bottom?
+10. Are your items displayed in the bag, with a total amount of your purchases at the bottom?
 
 <p align="center">
   <img width="200" height="100" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_7.JPG">
 </p> 
 
 **_All tests performed and no errors found._**
+
+### Registration and User Accounts
 
 **User Story 5 & 7 Register for an account. And email notification.**
 
@@ -209,3 +211,63 @@
 <p align="center">
   <img width="400" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/email_test_1.JPG">
 </p>
+
+**_All tests performed and no errors found._**
+
+**User Story 8. Recover password.**
+
+1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
+2. Does the my account link appear in the top right of the navbar?
+3. When clicked does a dropdown appear with the register and login links?
+
+<p align="center">
+  <img width="100" height="125" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/register_test_1.JPG">
+</p> 
+
+4. Click the login link.
+5. On the sign in page, is there a forgot password link underneath the sign on buttons?
+
+<p align="center">
+  <img width="200" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/forgot_password_test_1.JPG">
+</p> 
+
+6. Click the forgot password link. Are you taken to the password reset form?
+
+<p align="center">
+  <img width="400" height="200" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/forgot_password_test_2.JPG">
+</p>
+
+7. Fill in the form and submit, check your email. Have you received a password reset email?
+
+<p align="center">
+  <img width="400" height="200" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/forgot_password_test_3.JPG">
+</p>
+
+8. Follow the link in the email. Are you able to reset your password?
+
+**_All tests performed and no errors found._**
+
+### Purchasing and checkout
+
+**User Story 9. Select size & quantity of product.**
+
+1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
+2. Click the Shop Now Button.
+3. Click on any wetsuit image.
+4. Does the size and quantity selector appear underneath the product details
+
+<p align="center">
+  <img width="200" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/size_test_1.JPG">
+</p>
+
+5. Are you able to select from a variety of sizes and adjust the quantity?
+6. Click the add to bag button.
+7. Click the bag link in the navbar at the top of the page.
+8. Check the products in the bag, does it have the correct size and amount previously selected?
+
+<p align="center">
+  <img width="500" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/size_test_3.JPG">
+</p>
+
+**_All tests performed and no errors found._**
+
