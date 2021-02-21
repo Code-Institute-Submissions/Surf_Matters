@@ -39,7 +39,7 @@
 
 ### Viewing and navigation.
 
-**User Story 1. View all Products**
+#### User Story 1. View all Products
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the **Shop Now** link appear in the Navbar?
@@ -59,7 +59,7 @@
 
 **_All tests performed and no errors found._**
 
-**User Story 2. View individual product details.**
+#### User Story 2. View individual product details.
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the **Shop Now** link appear in the Navbar?
@@ -80,7 +80,7 @@
 
 **_All tests performed and no errors found._**
 
-**User Story 3 & 10 Add items to a shopping bag / View items in bag**
+#### User Story 3 & 10 Add items to a shopping bag / View items in bag
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the **Shop Now** link appear in the Navbar?
@@ -104,15 +104,13 @@
 10. Click the bag link.
 11. Are your selected items displayed on a page titled Your Bag?
 
-
-
 <p align="center">
   <img width="475" height="250" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_6.JPG">
 </p> 
 
 **_All tests performed and no errors found._**
 
-**User Story 4. View the total of my purchases.**
+#### User Story 4. View the total of my purchases.
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the **Shop Now** link appear in the Navbar?
@@ -133,7 +131,7 @@
 
 ### Registration and User Accounts
 
-**User Story 5 & 7 Register for an account. And email notification.**
+#### User Story 5 & 7 Register for an account. And email notification.
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the my account link appear in the top right of the navbar?
@@ -164,7 +162,7 @@
 
 **_All tests performed and no errors found._**
 
-**User Story 6. Login and Logout.**
+#### User Story 6. Login and Logout.
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the my account link appear in the top right of the navbar?
@@ -203,7 +201,7 @@
 
 **_All tests performed and no errors found._**
 
-**User Story 7. Receive email comfirmation after registering.**
+#### User Story 7. Receive email comfirmation after registering.
 
 1. See user story 5 and follow all steps.
 2. Check the inbox of the email used for sign up. Have you received an email?
@@ -214,7 +212,7 @@
 
 **_All tests performed and no errors found._**
 
-**User Story 8. Recover password.**
+#### User Story 8. Recover password.
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the my account link appear in the top right of the navbar?
@@ -249,7 +247,7 @@
 
 ### Purchasing and checkout
 
-**User Story 9. Select size & quantity of product.**
+#### User Story 9. Select size & quantity of product.
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Click the Shop Now Button.
@@ -271,13 +269,13 @@
 
 **_All tests performed and no errors found._**
 
-**User Story 3 & 10 Add items to a shopping bag / View items in bag**
+#### User Story 3 & 10 Add items to a shopping bag / View items in bag
 
 1. See user story 3 testing above.
 
 **_All tests performed and no errors found._**
 
-**User Story 11. Amend or delete bag items.**
+#### User Story 11. Amend or delete bag items.
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Click the Shop Now Button.
@@ -299,7 +297,7 @@
   <img width="200" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/adjust_bag_test_2.JPG">
 </p>
 
-**_All tests performed and no errors found._**
+#### _All tests performed and no errors found._
 
 **User Story 12. Securely make a payment.**
 
@@ -335,7 +333,7 @@
 
 ### Sorting and searching.
 
-**User Story 13. Sort the list of products.**
+#### User Story 13. Sort the list of products.
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the **Shop Now** link appear in the Navbar?
@@ -353,7 +351,7 @@ change accordingly?
 
 **_All tests performed and no errors found._**
 
-**User Story 14. View products by category.**
+#### User Story 14. View products by category.
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the **Shop Now** link appear in the Navbar?
@@ -376,7 +374,7 @@ subcategory?
 
 **_All tests performed and no errors found._**
 
-**User Story 15. Search for a product.**
+#### User Story 15. Search for a product.
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the **Shop Now** link appear in the Navbar?
@@ -395,7 +393,7 @@ subcategory?
 
 ### Admin and product management.
 
-**User Story 16. Add a product.**
+#### User Story 16. Add a product.
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Log in as a superuser.
@@ -417,7 +415,7 @@ subcategory?
 
 **_All tests performed and no errors found._**
 
-**User Story 17. Edit a product.**
+#### User Story 17. Edit a product.
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Log in as a superuser.
@@ -433,7 +431,7 @@ subcategory?
 
 **_All tests performed and no errors found._**
 
-**User Story 18. Delete a product.**
+#### User Story 18. Delete a product.
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Log in as a superuser.
@@ -455,7 +453,9 @@ subcategory?
 
 **_All tests performed and no errors found._**
 
-**User Story 19. Read blog articles.**
+### Blogs.
+
+#### User Story 19. Read blog articles.
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the **Blog** link appear in the Navbar?
@@ -477,7 +477,7 @@ subcategory?
 
 **_All tests performed and no errors found._**
 
-**User Story 20. Comment on a blog article.**
+#### User Story 20. Comment on a blog article.
 
 1. Follow steps 1-7 in the blog articles test above.
 2. Scroll to the bottom of the blog article.

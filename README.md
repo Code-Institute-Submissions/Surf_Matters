@@ -365,5 +365,33 @@ that I could fix issues found as I went along. The developer tools also assisted
 
 ### _**User Story Tests**_
 
-I have created a separate file for the user story tests, you can find them by clicking [here](files/user_story_tests/testing.md)
+I have created a separate file for the user story tests, you can find them by clicking [here](files/user_story_tests/testing.md).
 
+**The website was tested using a Microsoft Surface Pro on Windows 10, on the following browsers.**
+
+* Google Chrome - Version 88.0.4324.182 (Official Build) (64-bit)
+* Microsoft Edge - Version 88.0.705.74 (Official build) (64-bit)
+* Mozilla Firefox - 85.0.2 (64-bit)
+
+The site functioned well in all of these browsers. Stripe payments worked correctly. All forms displayed and functioned
+in the right way. Images were displayed as they should be, and all items were rendered correctly.
+
+**The app was also tested on a number of devices as listed below.**
+
+* Google Pixel 3 xl using Google Chrome on Android 11.
+
+* Moto E5 using using Google Chrome on Android 8.1.
+
+* Ipad 6th Generation using Safari on IOS 13.4.
+
+* Iphone 11 using Chrome on IOS 14.4.
+
+**I used the following websites for validation of my code**
+
+[HTML validation.](https://validator.w3.org/)
+
+[CSS validation.](https://jigsaw.w3.org/css-validator/)
+
+[JavaScript validation.](https://jshint.com/)
+
+### _**Issues found in testing**_
