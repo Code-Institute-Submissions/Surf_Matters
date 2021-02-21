@@ -4,6 +4,10 @@
 
 </div>
 
+<p align="center">
+    <img width="600" height="400" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/surf_matters_test_readme.jpg">
+</p>
+
 | User Story ID | As A/AN            | I want to be able to...                      | So that I can..                                                                |
 |---------------|--------------------|----------------------------------------------|--------------------------------------------------------------------------------|
 |               |                    | **Viewing and navigation**                   |                                                                                |
@@ -43,7 +47,7 @@
 4. Does a page appear titled Products?
 5. Can you scroll the page and view all products on the page?
 6. Are all the products displayed clearly with a name, price, subcategory and rating?
-![alt](https://github.com/adamparker75/Surf_Matters/blob/master/files/images/surf_matters_test_readme.jpg)
+
 
 
 
