@@ -44,15 +44,76 @@
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the **Shop Now** link appear in the Navbar?
 3. Click the Shop Now link.
+
 <p align="center">
   <img width="300 height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_2.JPG">
 </p> 
+
 4. Does a page appear titled Products?
 5. Can you scroll the page and view all products on the page?
 6. Are all the products displayed clearly with a name, price, subcategory and rating?
+
 <p align="center">
-  <img width="300 height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_1.JPG">
+  <img width="300" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_1.JPG">
 </p> 
+
+**_All tests performed and no errors found._**
+
+**User Story 2. View individual product details.**
+
+1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
+2. Does the **Shop Now** link appear in the Navbar?
+3. Click the Shop Now link.
+
+<p align="center">
+  <img width="300" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_2.JPG">
+</p> 
+
+4. Does a page appear titled Products?
+5. Are all the products displayed clearly?
+6. Click on an image of a product.
+7. Are you directed to a new page displaying the selected product image and information?
+
+<p align="center">
+  <img width="500" height="250" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_3.JPG">
+</p>
+
+**_All tests performed and no errors found._**
+
+**User Story 3. Add items to a shopping bag.**
+
+1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
+2. Does the **Shop Now** link appear in the Navbar?
+3. Click the Shop Now link.
+4. Does a page appear titled Products?
+5. Are all the products displayed clearly?
+6. Click on an image of a product.
+7. Are you directed to a new page displaying the selected product image and information?
+8. Click the add to Bag button.
+
+<p align="center">
+  <img width="300" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_4.JPG">
+</p> 
+
+9. Has the bag link in the top right navbar been updated with an amount?
+
+<p align="center">
+  <img width="300" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_5.JPG">
+</p> 
+
+10. Click the bag link.
+11. Are your selected items displayed on a page titled Your Bag?
+
+
+
+<p align="center">
+  <img width="300" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_6.JPG">
+</p> 
+
+**_All tests performed and no errors found._**
+
+
+
 
 
 
