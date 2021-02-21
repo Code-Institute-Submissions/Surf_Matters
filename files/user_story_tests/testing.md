@@ -54,7 +54,7 @@
 6. Are all the products displayed clearly with a name, price, subcategory and rating?
 
 <p align="center">
-  <img width="300" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_1.JPG">
+  <img width="500" height="250" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_1.JPG">
 </p> 
 
 **_All tests performed and no errors found._**
@@ -92,13 +92,13 @@
 8. Click the add to Bag button.
 
 <p align="center">
-  <img width="300" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_4.JPG">
+  <img width="200" height="100" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_4.JPG">
 </p> 
 
 9. Has the bag link in the top right navbar been updated with an amount?
 
 <p align="center">
-  <img width="300" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_5.JPG">
+  <img width="200" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_5.JPG">
 </p> 
 
 10. Click the bag link.
@@ -107,7 +107,7 @@
 
 
 <p align="center">
-  <img width="300" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_6.JPG">
+  <img width="500" height="250" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_6.JPG">
 </p> 
 
 **_All tests performed and no errors found._**
