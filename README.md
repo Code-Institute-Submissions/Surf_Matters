@@ -400,7 +400,7 @@ in the right way. Images were displayed as they should be, and all items were re
 I created a category objects filter for the surf lessons in the all_products view. Then created a prdoucts filter to not include the surf lessons.
 
 2. No products were displaying after adding the product filter in the all_products view. This was resolved by changing the products.filter to 
-category__name__exact instead og category__name__in.
+**category__name__exact** instead of **category__name__in**.
 
 3. On the checkout page the processing overlay was appearing on mobile devices after pressing the navbar hamburger link. I realised that 
 I hadn't given an ID to the checkout button so the overlay was looing for anything with a class of button. This worked correctly once
@@ -442,4 +442,55 @@ The following steps are taken to deploy the website.
 
 ### _**Deploying to Heroku**_
 
+1. In your IDE create a **Procfile** and add the following on the top line. <br>
+**web: gunicorn surf_matters.wsgi:application**
+2. Commit and push the files to Github.
+3. Navigate to Heroku and login. <https://id.heroku.com/login>
+4. Click on the new butoon and then choose create new app.
 
+<p align="center">
+  <img width="300" src="files/images/deployment/heroku_deploy.JPG">
+</p> 
+
+5. Give your app a name, select a region and then click create app.
+
+<p align="center">
+  <img width="400" height="200" src="files/images/deployment/heroku_deploy_2.JPG">
+</p> 
+
+6. In the deploy tab of your app, click connect to Github.
+
+<p align="center">
+  <img width="300" height="50" src="files/images/deployment/heroku_deploy_3.JPG">
+</p> 
+
+7. Search for your repository name, once found click connect.
+
+<p align="center">
+  <img width="400" height="50" src="files/images/deployment/heroku_deploy_4.JPG">
+</p> 
+
+8. Click the settings tab and then click reveal config vars.
+
+<p align="center">
+  <img width="300" src="files/images/deployment/heroku_deploy_5.JPG">
+</p> 
+
+9. Add in the following config variables. The same as in your environment variables. The email variables
+are taken from Gmail.
+
+<p align="center">
+  <img width="400" height="400" src="files/images/deployment/heroku_deploy_6.JPG">
+</p>
+
+10. Click back to the deploy tab, choose a branch to deploy and then click enable automatic deploys.
+
+<p align="center">
+  <img width="400" height="200" src="files/images/deployment/heroku_deploy_8.JPG">
+</p>
+
+11. Click open app at the top of the page.
+
+<p align="center">
+  <img width="300" src="files/images/deployment/heroku_deploy_7.JPG">
+</p>
