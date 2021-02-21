@@ -98,7 +98,7 @@
 9. Has the bag link in the top right navbar been updated with an amount?
 
 <p align="center">
-  <img width="200" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_5.JPG">
+  <img width="250" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_5.JPG">
 </p> 
 
 10. Click the bag link.
@@ -107,15 +107,27 @@
 
 
 <p align="center">
-  <img width="500" height="250" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_6.JPG">
+  <img width="400" height="250" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_6.JPG">
 </p> 
 
 **_All tests performed and no errors found._**
 
+**User Story 3. View the total of my purchases.**
 
+1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
+2. Does the **Shop Now** link appear in the Navbar?
+3. Click the Shop Now link.
+4. Does a page appear titled Products?
+5. Are all the products displayed clearly?
+6. Click on an image of a product.
+7. Are you directed to a new page displaying the selected product image and information?
+8. Click the add to Bag button.
+9. Click the bag link at the top of the page.
+10. Are your items displayed in the bag, with a toral amount of your purchases at the bottom?
 
-
-
+<p align="center">
+  <img width="200" height="100" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_6.JPG">
+</p> 
 
 
 
