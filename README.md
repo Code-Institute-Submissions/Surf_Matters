@@ -446,7 +446,7 @@ The following steps are taken to deploy the website.
 **web: gunicorn surf_matters.wsgi:application**
 2. Commit and push the files to Github.
 3. Navigate to Heroku and login. <https://id.heroku.com/login>
-4. Click on the new butoon and then choose create new app.
+4. Click on the new button and then choose create new app.
 
 <p align="center">
   <img width="300" src="files/images/deployment/heroku_deploy.JPG">
@@ -492,7 +492,7 @@ are taken from Gmail.
 11. In the resources tab search for Postgres in add-ons 
 
 <p align="center">
-  <img width="400" height="100" src="files/images/deployment/heroku_deploy_9.JPG">
+  <img width="400" height="150" src="files/images/deployment/heroku_deploy_9.JPG">
 </p> 
 
 12. Choose hobby/dev then click submit order form.
@@ -506,6 +506,8 @@ are taken from Gmail.
 <p align="center">
   <img width="300" src="files/images/deployment/heroku_deploy_7.JPG">
 </p>
+
+The site is now deployed on Heroku.
 
 ## **Credits**
 
