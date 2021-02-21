@@ -46,7 +46,7 @@
 3. Click the Shop Now link.
 
 <p align="center">
-  <img width="300 height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_2.JPG">
+  <img width="300" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_2.JPG">
 </p> 
 
 4. Does a page appear titled Products?
@@ -383,7 +383,7 @@ subcategory?
 3. Click the Shop Now link.
 4. Are the products displayed and the search box displayed in the navbar?
 <p align="center">
-  <img width="200" height="100" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/search_test_1.JPG">
+  <img width="225" height="100" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/search_test_1.JPG">
 </p>
 
 5. Type 'Rip' in the search box.
@@ -409,7 +409,7 @@ subcategory?
 5. Fill in the form to add a test product and then click add product.
 
 <p align="center">
-  <img width="200" height="100" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/add_product_test_2.JPG">
+  <img width="225" height="100" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/add_product_test_2.JPG">
 </p>
 
 6. Do you get a page displaying your new product details?
@@ -425,7 +425,7 @@ subcategory?
 4. Are the edit / delete links showing?
 
 <p align="center">
-  <img width="200" height="225" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/edit_product_test_1.JPG">
+  <img width="250" height="225" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/edit_product_test_1.JPG">
 </p>
 
 5. Click edit and make a change to the test product.
@@ -441,7 +441,7 @@ subcategory?
 4. Are the edit / delete links showing?
 
 <p align="center">
-  <img width="200" height="225" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/edit_product_test_1.JPG">
+  <img width="250" height="225" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/edit_product_test_1.JPG">
 </p>
 
 6. Click the delete link.
@@ -452,5 +452,46 @@ subcategory?
 </p>
 
 8. Has the product been deleted from the displayed products?
+
+**_All tests performed and no errors found._**
+
+**User Story 19. Read blog articles.**
+
+1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
+2. Does the **Blog** link appear in the Navbar?
+3. Click the Blog link.
+
+<p align="center">
+  <img width="300" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_2.JPG">
+</p> 
+
+4. Does a page appear titled Blog?
+5. Scroll the blog page are there a number of blog articles displayed?
+6. Click the Read More button on one of the blogs.
+
+<p align="center">
+  <img width="150" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/blog_test_1.JPG">
+</p> 
+
+7. Is the full blog article displayed?
+
+**_All tests performed and no errors found._**
+
+**User Story 20. Comment on a blog article.**
+
+1. Follow steps 1-7 in the blog articles test above.
+2. Scroll to the bottom of the blog article.
+3. Is the comments form showing at the bottom of the article?
+
+<p align="center">
+  <img width="500" height="550" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/blog_comment_test_1.JPG">
+</p> 
+
+4. Fill in the form and click submit.
+5. Is the comment displayed at the bottom of the blog?
+
+<p align="center">
+  <img width="200" height="75" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/blog_comment_test_2.JPG">
+</p> 
 
 **_All tests performed and no errors found._**
