@@ -395,3 +395,51 @@ in the right way. Images were displayed as they should be, and all items were re
 [JavaScript validation.](https://jshint.com/)
 
 ### _**Issues found in testing**_
+
+1. The Surf Lessons were displaying on the all products page, when they should only be displayed on the Surf Lessons page. To resolve this
+I created a category objects filter for the surf lessons in the all_products view. Then created a prdoucts filter to not include the surf lessons.
+
+2. No products were displaying after adding the product filter in the all_products view. This was resolved by changing the products.filter to 
+category__name__exact instead og category__name__in.
+
+3. On the checkout page the processing overlay was appearing on mobile devices after pressing the navbar hamburger link. I realised that 
+I hadn't given an ID to the checkout button so the overlay was looing for anything with a class of button. This worked correctly once
+this was changed.
+
+## **Deployment**
+
+Surf Matters was developed using Gitpod as an IDE, Github is used to store the repository and for version control. The website is deployed on 
+Heroku.
+
+The following steps are taken to deploy the website.
+
+1. Navigate to my Surf Matters Github repository - <https://github.com/adamparker75/Surf_Matters>
+2. Click on the dropdown that says code.
+
+<p align="center">
+    <img width="300" height="50" src="files/images/deployment/git_clone.JPG">
+</p>
+
+3. A URL is displayed, to clone with HTTPS copy this URL
+
+<p align="center">
+    <img width="400" height="300" src="files/images/deployment/git_clone_2.JPG">
+</p>
+
+4. Open up your preferred IDE (Integrated Development Environment)
+5. Change the directory to the location you want the clone to be made.
+6. Type **git clone** and then paste the copied URL from step 3.
+7. Press Enter and your local clone will be created.
+8. In your Environment variables ensure you add the following.
+
+<p align="center">
+    <img width="300" height="250" src="files/images/deployment/env_variables.JPG">
+</p>
+
+9. You may have to create a [Stripe](https://stripe.com/gb) account to obtain the public and secret keys.
+10. Install the requirements.txt file by typing the following command. <br>
+**pip3 install -r requirements.txt**
+
+### _**Deploying to Heroku**_
+
+
