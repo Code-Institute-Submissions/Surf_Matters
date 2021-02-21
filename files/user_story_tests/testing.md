@@ -107,7 +107,7 @@
 
 
 <p align="center">
-  <img width="400" height="250" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_6.JPG">
+  <img width="500" height="250" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_6.JPG">
 </p> 
 
 **_All tests performed and no errors found._**
@@ -126,7 +126,7 @@
 10. Are your items displayed in the bag, with a toral amount of your purchases at the bottom?
 
 <p align="center">
-  <img width="200" height="100" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_6.JPG">
+  <img width="200" height="100" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_7.JPG">
 </p> 
 
 
