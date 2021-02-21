@@ -461,13 +461,13 @@ The following steps are taken to deploy the website.
 6. In the deploy tab of your app, click connect to Github.
 
 <p align="center">
-  <img width="300" height="50" src="files/images/deployment/heroku_deploy_3.JPG">
+  <img width="300" height="75" src="files/images/deployment/heroku_deploy_3.JPG">
 </p> 
 
 7. Search for your repository name, once found click connect.
 
 <p align="center">
-  <img width="400" height="50" src="files/images/deployment/heroku_deploy_4.JPG">
+  <img width="400" height="75" src="files/images/deployment/heroku_deploy_4.JPG">
 </p> 
 
 8. Click the settings tab and then click reveal config vars.
@@ -486,11 +486,27 @@ are taken from Gmail.
 10. Click back to the deploy tab, choose a branch to deploy and then click enable automatic deploys.
 
 <p align="center">
-  <img width="400" height="200" src="files/images/deployment/heroku_deploy_8.JPG">
+  <img width="400" height="250" src="files/images/deployment/heroku_deploy_8.JPG">
 </p>
 
-11. Click open app at the top of the page.
+11. In the resources tab search for Postgres in add-ons 
+
+<p align="center">
+  <img width="400" height="100" src="files/images/deployment/heroku_deploy_9.JPG">
+</p> 
+
+12. Choose hobby/dev then click submit order form.
+
+<p align="center">
+  <img width="400" height="350" src="files/images/deployment/heroku_deploy_10.JPG">
+</p> 
+
+13. Click open app at the top of the page.
 
 <p align="center">
   <img width="300" src="files/images/deployment/heroku_deploy_7.JPG">
 </p>
+
+## **Credits**
+
+
