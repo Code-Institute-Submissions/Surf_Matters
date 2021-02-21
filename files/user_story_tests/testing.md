@@ -131,7 +131,7 @@
 
 **_All tests performed and no errors found._**
 
-**User Story 5. Register for an account.**
+**User Story 5 & 7 Register for an account. And email notification.**
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the my account link appear in the top right of the navbar?
@@ -200,3 +200,12 @@
 9. Click the sign out button, are you returned to the home page?
 
 **_All tests performed and no errors found._**
+
+**User Story 7. Receive email comfirmation after registering.**
+
+1. See user story 5 and follow all steps.
+2. Check the inbox of the email used for sign up. Have you received an email?
+
+<p align="center">
+  <img width="400" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/email_test_1.JPG">
+</p>
