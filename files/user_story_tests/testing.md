@@ -161,3 +161,42 @@
 </p> 
 
 **_All tests performed and no errors found._**
+
+**User Story 6. Login and Logout.**
+
+1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
+2. Does the my account link appear in the top right of the navbar?
+
+<p align="center">
+  <img width="250" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_5.JPG">
+</p> 
+
+3. When clicked does a dropdown appear with the register and login links?
+
+<p align="center">
+  <img width="100" height="125" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/register_test_1.JPG">
+</p> 
+
+4. Click the login link.
+5. Does a sign in page appear with a form for signing in?
+
+<p align="center">
+  <img width="500" height="400" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/login_test_1.JPG">
+</p> 
+
+6. Sign in to the site, are you directed to the home page?
+7. Click the my account link at the top of the page, does a log out link appear?
+
+<p align="center">
+  <img width="100" height="125" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/login_test_2.JPG">
+</p>
+
+8. Click the log out link, does a confirmation message appear? 
+
+<p align="center">
+  <img width="300" height="250" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/login_test_3.JPG">
+</p>
+
+9. Click the sign out button, are you returned to the home page?
+
+**_All tests performed and no errors found._**
