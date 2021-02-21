@@ -32,3 +32,20 @@
 |               |                    | **Blogs**                                    |                                                                                |
 | 19            | Site User          | Read blog articles.                          | Read about a subject of interest to me.                                        |
 | 20            | Site User          | Comment on a blog article.                   | Let the author know how I felt about their post.                               |
+
+### Viewing and navigation.
+
+**User Story 1. View all Products**
+
+1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
+2. Does the **Shop Now** link appear in the Navbar?
+3. Click the Shop Now link.
+4. Does a page appear titled Products?
+5. Can you scroll the page and view all products on the page?
+6. Are all the products displayed clearly with a name, price, subcategory and rating?
+![alt](https://github.com/adamparker75/Surf_Matters/blob/master/files/images/surf_matters_test_readme.jpg)
+
+
+
+
+
