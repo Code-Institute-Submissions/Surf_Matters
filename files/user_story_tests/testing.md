@@ -4,7 +4,7 @@
 
 </div>
 
-<p align="center">
+<p>
     <img width="600" height="400" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/surf_matters_test_readme.jpg">
 </p>
 
@@ -45,7 +45,7 @@
 2. Does the **Shop Now** link appear in the Navbar?
 3. Click the Shop Now link.
 
-<p align="center">
+<p>
   <img width="300 height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_2.JPG">
 </p> 
 
@@ -53,7 +53,7 @@
 5. Can you scroll the page and view all products on the page?
 6. Are all the products displayed clearly with a name, price, subcategory and rating?
 
-<p align="center">
+<p>
   <img width="500" height="250" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_1.JPG">
 </p> 
 
@@ -65,7 +65,7 @@
 2. Does the **Shop Now** link appear in the Navbar?
 3. Click the Shop Now link.
 
-<p align="center">
+<p>
   <img width="300" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_2.JPG">
 </p> 
 
@@ -74,7 +74,7 @@
 6. Click on an image of a product.
 7. Are you directed to a new page displaying the selected product image and information?
 
-<p align="center">
+<p>
   <img width="500" height="250" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_3.JPG">
 </p>
 
@@ -91,13 +91,13 @@
 7. Are you directed to a new page displaying the selected product image and information?
 8. Click the add to Bag button.
 
-<p align="center">
+<p>
   <img width="200" height="100" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_4.JPG">
 </p> 
 
 9. Has the bag link in the top right navbar been updated with an amount?
 
-<p align="center">
+<p>
   <img width="250" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_5.JPG">
 </p> 
 
@@ -106,7 +106,7 @@
 
 
 
-<p align="center">
+<p>
   <img width="475" height="250" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_6.JPG">
 </p> 
 
@@ -125,7 +125,7 @@
 9. Click the bag link at the top of the page.
 10. Are your items displayed in the bag, with a total amount of your purchases at the bottom?
 
-<p align="center">
+<p>
   <img width="200" height="100" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_7.JPG">
 </p> 
 
@@ -138,27 +138,27 @@
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the my account link appear in the top right of the navbar?
 
-<p align="center">
+<p>
   <img width="250" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_5.JPG">
 </p> 
 
 3. When clicked does a dropdown appear with the register and login links?
 
-<p align="center">
+<p>
   <img width="100" height="125" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/register_test_1.JPG">
 </p> 
 
 4. Click the register link.
 5. Does the sign up page appear with a form to fill in?
 
-<p align="center">
+<p>
   <img width="500" height="400" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/register_test_2.JPG">
 </p> 
 
 6. Fill the form in and click sign up?
 7. Once submitted do you receive an email verification message?
 
-<p align="center">
+<p>
   <img width="500" height="400" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/register_test_3.JPG">
 </p> 
 
@@ -169,33 +169,33 @@
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the my account link appear in the top right of the navbar?
 
-<p align="center">
+<p>
   <img width="250" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_5.JPG">
 </p> 
 
 3. When clicked does a dropdown appear with the register and login links?
 
-<p align="center">
+<p>
   <img width="100" height="125" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/register_test_1.JPG">
 </p> 
 
 4. Click the login link.
 5. Does a sign in page appear with a form for signing in?
 
-<p align="center">
+<p>
   <img width="500" height="400" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/login_test_1.JPG">
 </p> 
 
 6. Sign in to the site, are you directed to the home page?
 7. Click the my account link at the top of the page, does a log out link appear?
 
-<p align="center">
+<p>
   <img width="100" height="125" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/login_test_2.JPG">
 </p>
 
 8. Click the log out link, does a confirmation message appear? 
 
-<p align="center">
+<p>
   <img width="300" height="250" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/login_test_3.JPG">
 </p>
 
@@ -208,7 +208,7 @@
 1. See user story 5 and follow all steps.
 2. Check the inbox of the email used for sign up. Have you received an email?
 
-<p align="center">
+<p>
   <img width="400" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/email_test_1.JPG">
 </p>
 
@@ -220,26 +220,26 @@
 2. Does the my account link appear in the top right of the navbar?
 3. When clicked does a dropdown appear with the register and login links?
 
-<p align="center">
+<p>
   <img width="100" height="125" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/register_test_1.JPG">
 </p> 
 
 4. Click the login link.
 5. On the sign in page, is there a forgot password link underneath the sign on buttons?
 
-<p align="center">
+<p>
   <img width="200" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/forgot_password_test_1.JPG">
 </p> 
 
 6. Click the forgot password link. Are you taken to the password reset form?
 
-<p align="center">
+<p>
   <img width="400" height="200" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/forgot_password_test_2.JPG">
 </p>
 
 7. Fill in the form and submit, check your email. Have you received a password reset email?
 
-<p align="center">
+<p>
   <img width="400" height="200" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/forgot_password_test_3.JPG">
 </p>
 
@@ -256,7 +256,7 @@
 3. Click on any wetsuit image.
 4. Does the size and quantity selector appear underneath the product details
 
-<p align="center">
+<p>
   <img width="200" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/size_test_1.JPG">
 </p>
 
@@ -265,7 +265,7 @@
 7. Click the bag link in the navbar at the top of the page.
 8. Check the products in the bag, does it have the correct size and amount previously selected?
 
-<p align="center">
+<p>
   <img width="500" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/size_test_3.JPG">
 </p>
 
