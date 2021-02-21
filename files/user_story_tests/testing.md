@@ -28,7 +28,7 @@
 |               |                    | **Sorting and searching**                    |                                                                                |
 | 13            | Shopper            | Sort the list of products.                   | Find the best price or best rated product.                                     |
 | 14            | Shopper            | View products by category.                   | View specific products that I am in interested in.                             |
-| 15            | Shopper            | Search for a product by name.                | Find a specific product I am in terested in.                                   |
+| 15            | Shopper            | Search for a product by name.                | Find a specific product I am interested in.                                    |
 |               |                    | **Admin and Product Management**             |                                                                                |
 | 16            | Site / Store Owner | Add a product.                               | Increase the product range I am selling.                                       |
 | 17            | Site / Store Owner | Edit a product.                              | Change product prices, descriptions etc.                                       |
@@ -296,7 +296,7 @@
 10. Is the bag is empty message displayed with a keep shopping button?
 
 <p align="center">
-  <img width="200" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/size_test_2.JPG">
+  <img width="200" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/adjust_bag_test_2.JPG">
 </p>
 
 **_All tests performed and no errors found._**
@@ -330,5 +330,127 @@
 <p align="center">
   <img width="600" height="500" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/secure_checkout_test_3.JPG">
 </p>
+
+**_All tests performed and no errors found._**
+
+### Sorting and searching.
+
+**User Story 13. Sort the list of products.**
+
+1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
+2. Does the **Shop Now** link appear in the Navbar?
+3. Click the Shop Now link.
+4. Are the products displayed along with the sort and filter drop downs?
+
+<p align="center">
+  <img width="300" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/sort_test_1.JPG">
+</p>
+
+5. Click on sort by, do you get the option to sort, by price, name and rating?
+6. Sort the products by price, does the order of the products displayed change?
+7. Choose the other options in the sort by drop down, does the order of products displayed
+change accordingly?
+
+**_All tests performed and no errors found._**
+
+**User Story 14. View products by category.**
+
+1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
+2. Does the **Shop Now** link appear in the Navbar?
+3. Click the Shop Now link.
+4. Are the products displayed along with the sort and filter drop downs?
+
+<p align="center">
+  <img width="300" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/sort_test_1.JPG">
+</p>
+
+5. Click on one of the product filter drop downs, does a list of subcategories appear?
+
+<p align="center">
+  <img width="250" height="200" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/filter_test_1.JPG">
+</p>
+
+6. Select one of the subcategories, are only products with that subcategory displayed?
+7. Select the other subcategories one by one, are all products displayed correctly in their
+subcategory?
+
+**_All tests performed and no errors found._**
+
+**User Story 15. Search for a product.**
+
+1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
+2. Does the **Shop Now** link appear in the Navbar?
+3. Click the Shop Now link.
+4. Are the products displayed and the search box displayed in the navbar?
+<p align="center">
+  <img width="200" height="100" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/search_test_1.JPG">
+</p>
+
+5. Type 'Rip' in the search box.
+6. Are all 'RipCurl' products displayed?
+7. Type 'surf' in the search box.
+8. Do the displayed products change?
+
+**_All tests performed and no errors found._**
+
+### Admin and product management.
+
+**User Story 16. Add a product.**
+
+1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
+2. Log in as a superuser.
+3. Does the product management link appear when My Account is clicked on the navbar
+
+<p align="center">
+  <img width="200" height="200" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/add_product_test_1.JPG">
+</p>
+
+4. Click the product management link, are you directed to the manage your products page?
+5. Fill in the form to add a test product and then click add product.
+
+<p align="center">
+  <img width="200" height="100" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/add_product_test_2.JPG">
+</p>
+
+6. Do you get a page displaying your new product details?
+7. Click shop now, is your product displayed in the list of products?
+
+**_All tests performed and no errors found._**
+
+**User Story 17. Edit a product.**
+
+1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
+2. Log in as a superuser.
+3. Select the newly created product from the test above.
+4. Are the edit / delete links showing?
+
+<p align="center">
+  <img width="200" height="225" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/edit_product_test_1.JPG">
+</p>
+
+5. Click edit and make a change to the test product.
+6. Has that change been reflected in the product details?
+
+**_All tests performed and no errors found._**
+
+**User Story 18. Delete a product.**
+
+1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
+2. Log in as a superuser.
+3. Select the newly edited product from the test above.
+4. Are the edit / delete links showing?
+
+<p align="center">
+  <img width="200" height="225" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/edit_product_test_1.JPG">
+</p>
+
+6. Click the delete link.
+7. Does a message appear saying product deleted?
+
+<p align="center">
+  <img width="200" height="175" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/delete_product_test_1.JPG">
+</p>
+
+8. Has the product been deleted from the displayed products?
 
 **_All tests performed and no errors found._**

@@ -79,7 +79,7 @@ The website is aimed at but not restricted to the following users :
 |               |                    | **Sorting and searching**                    |                                                                                |
 | 13            | Shopper            | Sort the list of products.                   | Find the best price or best rated product.                                     |
 | 14            | Shopper            | View products by category.                   | View specific products that I am in interested in.                             |
-| 15            | Shopper            | Search for a product by name.                | Find a specific product I am in terested in.                                   |
+| 15            | Shopper            | Search for a product by name.                | Find a specific product I am interested in.                                    |
 |               |                    | **Admin and Product Management**             |                                                                                |
 | 16            | Site / Store Owner | Add a product.                               | Increase the product range I am selling.                                       |
 | 17            | Site / Store Owner | Edit a product.                              | Change product prices, descriptions etc.                                       |
@@ -91,7 +91,7 @@ The website is aimed at but not restricted to the following users :
 
 ## _**Database Schema**_
 
-The databases were stored in [sqlite3](https://docs.python.org/3/library/sqlite3.html) in development, and [heroku postgres](https://www.heroku.com/postgres) in
+The databases are stored in [sqlite3](https://docs.python.org/3/library/sqlite3.html) in development, and [heroku postgres](https://www.heroku.com/postgres) in
 production. A number of different models are used throughout the site as detailed in the database schema below.
 
 <br>
