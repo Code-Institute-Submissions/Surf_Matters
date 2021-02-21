@@ -107,12 +107,12 @@
 
 
 <p align="center">
-  <img width="500" height="250" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_6.JPG">
+  <img width="475" height="250" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_6.JPG">
 </p> 
 
 **_All tests performed and no errors found._**
 
-**User Story 3. View the total of my purchases.**
+**User Story 4. View the total of my purchases.**
 
 1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
 2. Does the **Shop Now** link appear in the Navbar?
@@ -129,5 +129,35 @@
   <img width="200" height="100" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_7.JPG">
 </p> 
 
+**_All tests performed and no errors found._**
 
+**User Story 5. Register for an account.**
 
+1. Navigate to the [Surf Matters](https://adamp-surf-matters.herokuapp.com/) website.
+2. Does the my account link appear in the top right of the navbar?
+
+<p align="center">
+  <img width="250" height="50" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/product_test_5.JPG">
+</p> 
+
+3. When clicked does a dropdown appear with the register and login links?
+
+<p align="center">
+  <img width="100" height="125" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/register_test_1.JPG">
+</p> 
+
+4. Click the register link.
+5. Does the sign up page appear with a form to fill in?
+
+<p align="center">
+  <img width="500" height="400" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/register_test_2.JPG">
+</p> 
+
+6. Fill the form in and click sign up?
+7. Once submitted do you receive an email verification message?
+
+<p align="center">
+  <img width="500" height="400" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/register_test_3.JPG">
+</p> 
+
+**_All tests performed and no errors found._**
