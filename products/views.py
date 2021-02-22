@@ -13,10 +13,15 @@ def all_products(request):
 
     lessons_category = Category.objects.filter(
         name__icontains="Lesson").first()
-    products = Product.objects.filter(~Q(
-        category__name__icontains='Lesson')) if request.GET.get(
-            'category') != lessons_category.name else Product.objects.filter(
-            Q(category__name__icontains='Lesson'))
+
+    if request.GET.get('category'):
+        is_products = request.GET.get('category') != lessons_category.name  # reused variable at the bottom
+        products = Product.objects.filter(~Q(category__name__icontains='Lesson')) if is_products else Product.objects.filter(Q(category__name__icontains='Lesson'))
+    else:
+        # Search
+        is_products = True
+        products = Product.objects.all()
+
     query = None
     categories = None
     subcategories = None
@@ -66,6 +71,10 @@ def all_products(request):
     current_sorting = f'{sort}_{direction}'
 
     context = {
+        # Used for deciding whether or not to render the product filtering buttons
+        'is_products': is_products,
+        # This was moved from the FE to the BE because it's business logic
+        'page_h1': 'Products' if is_products else 'Lessons',
         'products': products,
         'search_term': query,
         'current_subcategories': subcategories,
