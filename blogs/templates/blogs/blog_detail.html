@@ -52,8 +52,8 @@
                             </div>
                             {% else %}
                             <h4 class="blog-heading">Please leave a comment.</h4>
-                            <form method="post" class="comments-form">
-                                {{ comment_form.as_p }}
+                            <form method="post" style="margin-top: 1.3em;">
+                                {{ comment_form | crispy }}
                                 {% csrf_token %}
                                 <button type="submit" class="btn btn-dark  btn-lg">Submit</button>
                             </form>
