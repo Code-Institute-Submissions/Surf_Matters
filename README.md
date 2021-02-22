@@ -340,7 +340,7 @@ are then displayed underneath the article.
 
 [Django crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Used for styling the websites forms, to make them match the Bootstrap theme.
 
-[Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - Used as a templating language with Django and Python.
+[Django template engine](https://docs.djangoproject.com/en/3.1/topics/templates/) - Used as a templating language with Django and Python.
 
 [Stripe](https://stripe.com/gb) - A secure online payment processing facility, used for processing customer payments.
 

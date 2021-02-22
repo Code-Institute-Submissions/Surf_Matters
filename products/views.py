@@ -71,7 +71,7 @@ def all_products(request):
     current_sorting = f'{sort}_{direction}'
 
     context = {
-        # Used for deciding whether or not to render the product filtering buttons
+        # Used to decide whether or not to render the product filtering buttons
         'is_products': is_products,
         # This was moved from the FE to the BE because it's business logic
         'page_h1': 'Products' if is_products else 'Lessons',
