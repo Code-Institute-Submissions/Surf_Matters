@@ -406,6 +406,12 @@ I created a category objects filter for the surf lessons in the all_products vie
 I hadn't given an ID to the checkout button so the overlay was looing for anything with a class of button. This worked correctly once
 this was changed.
 
+4. After logging in with your username and password, a toast message should appear saying succesfully logged in. This was not showing on the site,
+howerver when inspecting in Dev tools the HTML elements for the toast message were there. I found that the Bootstrap Jquery for the toast message
+was not working fully on the home page. So I copied across the Jquery code to the **postloadjs** on the home page. 
+
+5. The comments form on the blog details page was not responsive, causing the user to side scroll. I resolved this by rendering it as a **crispy form**.
+
 ## **Deployment**
 
 Surf Matters was developed using Gitpod as an IDE, Github is used to store the repository and for version control. The website is deployed on 
@@ -439,6 +445,9 @@ The following steps are taken to deploy the website.
 9. You may have to create a [Stripe](https://stripe.com/gb) account to obtain the public and secret keys.
 10. Install the requirements.txt file by typing the following command. <br>
 **pip3 install -r requirements.txt**
+
+11. Carry out a migrate with the following command. <br>
+**python3 manage.py migrate**
 
 ### _**Deploying to Heroku**_
 
@@ -508,6 +517,52 @@ are taken from Gmail.
 </p>
 
 The site is now deployed on Heroku.
+
+### _**Amazon Web Services (AWS)**_
+
+I have hosted the static files and media files for the deployed site in an [Amazon Web Services](https://aws.amazon.com/) **S3** bucket. To store the files,
+an S3 bucket needs to be created, the documentation for setting on uo can be found [here](https://docs.aws.amazon.com/s3/?id=docs_gateway). You will need to use 
+the below code for your CORS configuration when required.
+
+<p align="center">
+  <img width="400" height="350" src="files/images/deployment/s3_cors_config.JPG">
+</p>
+
+Once the set up is complete you will be given a CSV file titled new_user_credentials. Download this file as it holds the Access_key_ID and the
+Secret_Access_key which are needed to add to your Heroku config vars and, development environment variables.
+
+<p align="center">
+  <img width="350" height="250" src="files/images/deployment/s3_config_vars.JPG">
+</p>
+
+Back in your IDE follow the below steps.
+
+1. Run the following commands. <br>
+**pip3 install boto3** <br>
+**pip3 install django-storages**
+
+2. Freeze to requirements.txt <br>
+**pip3 freeze > requirements.txt**
+
+3. In settings.py add storages to **INSTALLED_APPS
+
+<p align="center">
+  <img width="200" src="files/images/deployment/s3_gitpod.JPG">
+</p>
+
+4. If not already there the following will need to be added to settings.py
+
+<p align="center">
+  <img width="350" height="250" src="files/images/deployment/s3_gitpod_settings.JPG">
+</p>
+
+5. In the project root directory create a **custom_storages.py** file and add teh following code.
+
+<p align="center">
+  <img width="350" height="250" src="files/images/deployment/s3_custom_storages.JPG">
+</p>
+
+6. Commit the changes and push to Github and Heroku.
 
 ## **Credits**
 
