@@ -331,6 +331,7 @@ are then displayed underneath the article.
 [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - Provides some of the styling for the site.
 
 [Bootstrap](https://getbootstrap.com/) - Utilised for a lot of the styling of the site such as prodcut card and forms. Also used to make the site responsive.
+Bootstrap 4.6 was chosen as Crispy Forms are not available with Bootstrap 5.
 
 [Python](https://www.python.org/) - The main code used in the back end with Django.
 
@@ -521,7 +522,7 @@ The site is now deployed on Heroku.
 ### _**Amazon Web Services (AWS)**_
 
 I have hosted the static files and media files for the deployed site in an [Amazon Web Services](https://aws.amazon.com/) **S3** bucket. To store the files,
-an S3 bucket needs to be created, the documentation for setting on uo can be found [here](https://docs.aws.amazon.com/s3/?id=docs_gateway). You will need to use 
+an S3 bucket needs to be created, the documentation for setting one up can be found [here](https://docs.aws.amazon.com/s3/?id=docs_gateway). You will need to use 
 the below code for your CORS configuration when required.
 
 <p align="center">
@@ -566,4 +567,47 @@ Back in your IDE follow the below steps.
 
 ## **Credits**
 
+### _**Content**_
 
+* The code for the navigation bar was taken from [Bootstrap](https://getbootstrap.com/docs/4.6/components/navbar/).
+* The code for the account and bag links was taken from The Code Institute Boutique Ado project.
+* The footer was taken from [MD Bootstrap](https://mdbootstrap.com/docs/b4/jquery/navigation/footer/).
+* The Bootstrap carousel was taken from [Codepen](https://codepen.io/SitePoint/pen/ZbGwqe).
+* The blog templates were taken from [Start Bootstrap](https://startbootstrap.com/template/blog-home).
+* The blog comments form was created with help from [Django Central](https://djangocentral.com/creating-comments-system-with-django/).
+* Overlay and spinner taken from [JS Fiddle](https://jsfiddle.net/mshaker88/u41rgq3e/).
+* Product searching, filtering and sorted was created with help from The Code Institute Boutique Ado project. 
+* The wireframes were created with [Balsamiq](https://balsamiq.com/).
+* The favicon was created on [favicon-generator](https://www.favicon-generator.org/).
+* This project was developed using the Boutique Ado project tutorial as a reference and guide. The code has been customised to fit the purpose of the project.
+
+#### _**Product Images and content.**_
+
+This site is a fictitious e-commerce store built for education purposes. The product images and descriptions however were taken from the following 
+surf stores.
+* [Tynemouth Surf Co](https://www.tynemouthsurf.co.uk/)
+* [Shore](https://www.shore.co.uk/)
+* [Boardshop](https://www.boardshop.co.uk/)
+* [Surfdome](https://www.surfdome.com/Mens-Wetsuits/sddsl13650.htm)
+
+### _**Media**_
+
+The surfing images for the site were found through [Google](www.google.co.uk) images in the following loactions.
+
+* Surf lesson 1 - <https://www.wavehunters.co.uk/>
+* Surf lesson 2 - <https://tilegitsurf.com/en/surf-lessons-tenerife/>
+* Surf lesson 3 - <http://sennenbeach.com/surf-lessons/>
+* Surf lesson 4 - <https://soulsurfschool.com.au/byron-bay-surf-school-private-surfing-lessons/>
+* Surfing Image 1 - <https://www.wavehunters.co.uk/>
+* Surfing Image 2 - <https://www.surfline.com/surf-news/>
+* Surfing Image 3 - <https://www.boardshop.co.uk/blog/mid-length-surfboards/>
+* Surfing Image 4 - <https://www.helpfulholidays.co.uk/blog/10-cornish-beaches-for-surfing/>
+* Blog image 1 - <https://www.stevens.edu/news/new-effort-harvest-sustainable-renewable-energy-ocean-waves>
+* Blog image 2 - <https://www.livescience.com/38163-where-beach-sand-comes-from.html>
+* Blog image 3 - <https://www.rnz.co.nz/news/sport/366883/paige-hareb-closes-in-on-medal-at-world-surfing-games>
+* Surf wipeout - <https://www.booksurfcamps.com/news/surfing-wipeout>
+
+### _**Acknowledgements**_
+
+* To my wife **Claire Parker** for helping me test the app.
+* To my mentor **Reuben Ferrante** for once again guiding me through this project, and being a fantastic mentor throughout this whole process.
