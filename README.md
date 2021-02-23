@@ -393,8 +393,6 @@ in the right way. Images were displayed as they should be, and all items were re
 
 [CSS validation.](https://jigsaw.w3.org/css-validator/)
 
-[JavaScript validation.](https://jshint.com/)
-
 ### _**Issues found in testing**_
 
 1. The Surf Lessons were displaying on the all products page, when they should only be displayed on the Surf Lessons page. To resolve this
@@ -576,7 +574,7 @@ Back in your IDE follow the below steps.
 * The blog templates were taken from [Start Bootstrap](https://startbootstrap.com/template/blog-home).
 * The blog comments form was created with help from [Django Central](https://djangocentral.com/creating-comments-system-with-django/).
 * Overlay and spinner taken from [JS Fiddle](https://jsfiddle.net/mshaker88/u41rgq3e/).
-* Product searching, filtering and sorted was created with help from The Code Institute Boutique Ado project. 
+* Product searching, filtering and sorting was created with help from The Code Institute Boutique Ado project. 
 * The wireframes were created with [Balsamiq](https://balsamiq.com/).
 * The favicon was created on [favicon-generator](https://www.favicon-generator.org/).
 * This project was developed using the Boutique Ado project tutorial as a reference and guide. The code has been customised to fit the purpose of the project.

@@ -137,21 +137,21 @@
     </nav>
 
     {% if messages %}
-    <div class="message-container">
-        {% for message in messages %}
-        {% with message.level as level %}
-        {% if level == 40 %}
-        {% include 'includes/toasts/toast_error.html' %}
-        {% elif level == 30 %}
-        {% include 'includes/toasts/toast_warning.html' %}
-        {% elif level == 25 %}
-        {% include 'includes/toasts/toast_success.html' %}
-        {% else %}
-        {% include 'includes/toasts/toast_info.html' %}
-        {% endif %}
-        {% endwith %}
-        {% endfor %}
-    </div>
+        <div class="message-container">
+            {% for message in messages %}
+            {% with message.level as level %}
+            {% if level == 40 %}
+            {% include 'includes/toasts/toast_error.html' %}
+            {% elif level == 30 %}
+            {% include 'includes/toasts/toast_warning.html' %}
+            {% elif level == 25 %}
+            {% include 'includes/toasts/toast_success.html' %}
+            {% else %}
+            {% include 'includes/toasts/toast_info.html' %}
+            {% endif %}
+            {% endwith %}
+            {% endfor %}
+        </div>
     {% endif %}
 
     {% block page_header %}
@@ -162,78 +162,78 @@
     {% endblock %}
 
     {% block page_footer %}
-    <!-- Footer taken from https://mdbootstrap.com/docs/b4/jquery/navigation/footer/ -->
-    <footer class="page-footer pt-4">
-        <div class="container-fluid text-center text-md-left">
-            <div class="row">
-                <div class="col-md-4 mt-md-0 mt-3 text-center">
-                    <h5 class="text-uppercase footer-title">Who we are..</h5>
-                    <p class="footer-text">We are a family run business which opened in 2017, loacted in the beautiful
-                        town of Tynemouth we have the perfect
-                        location for all your surf needs. Just a stones throw from the famous Tynemouth Longsands beach,
-                        we boast a large selection of Surfboards and
-                        wetsuits for you to choose from.
-                        <br>
-                        Our Surf school is located just along the beach, where we provide lessons for beginners and
-                        intermediate surfers.
-                        <br>
-                        Come along and pay us a visit, our friendly staff are always happy to help and offer advice.
-                    </p>
-                </div>
-                <hr class="clearfix w-100 d-md-none pb-3">
-                <div class="col-md-4 mb-md-0 mb-3 text-center">
-                    <h5 class="text-uppercase footer-title">Socials..</h5>
-                    <ul class="list-inline">
-                        <li class="list-inline-item">
-                            <a href="https://www.facebook.com/" target="_blank">
-                                <i class="fab fa-facebook-square social-links"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.instagram.com/" target="_blank">
-                                <i class="fab fa-instagram-square social-links"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://twitter.com/?lang=en-gb" target="_blank">
-                                <i class="fab fa-twitter-square social-links"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.pinterest.co.uk/pinterest/" target="_blank">
-                                <i class="fab fa-pinterest-square social-links"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mt-md-0 mt-3 text-center">
-                    <h5 class="text-uppercase footer-title">Find Us at..</h5>
-                    <p class="footer-text">
-                        1 Surf Road <br>
-                        Tynemouth <br>
-                        Tyne & Wear <br>
-                        NE99 9ZZ <br>
-                        <br>
-                        <i class="fas fa-phone-square"></i> 0191 4980984
-                        <br>
-                        <br>
-                        <a href="#" class="footer-text"><i class="far fa-envelope"></i> admin@surfmatters.test</a>
-                    </p>
+        <!-- Footer taken from https://mdbootstrap.com/docs/b4/jquery/navigation/footer/ -->
+        <footer class="page-footer pt-4">
+            <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                    <div class="col-md-4 mt-md-0 mt-3 text-center">
+                        <h5 class="text-uppercase footer-title">Who we are..</h5>
+                        <p class="footer-text">We are a family run business which opened in 2017, loacted in the beautiful
+                            town of Tynemouth we have the perfect
+                            location for all your surf needs. Just a stones throw from the famous Tynemouth Longsands beach,
+                            we boast a large selection of Surfboards and
+                            wetsuits for you to choose from.
+                            <br>
+                            Our Surf school is located just along the beach, where we provide lessons for beginners and
+                            intermediate surfers.
+                            <br>
+                            Come along and pay us a visit, our friendly staff are always happy to help and offer advice.
+                        </p>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none pb-3">
+                    <div class="col-md-4 mb-md-0 mb-3 text-center">
+                        <h5 class="text-uppercase footer-title">Socials..</h5>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <i class="fab fa-facebook-square social-links"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <i class="fab fa-instagram-square social-links"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/?lang=en-gb" target="_blank">
+                                    <i class="fab fa-twitter-square social-links"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.pinterest.co.uk/pinterest/" target="_blank">
+                                    <i class="fab fa-pinterest-square social-links"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mt-md-0 mt-3 text-center">
+                        <h5 class="text-uppercase footer-title">Find Us at..</h5>
+                        <p class="footer-text">
+                            1 Surf Road <br>
+                            Tynemouth <br>
+                            Tyne & Wear <br>
+                            NE99 9ZZ <br>
+                            <br>
+                            <i class="fas fa-phone-square"></i> 0191 4980984
+                            <br>
+                            <br>
+                            <a href="#" class="footer-text"><i class="far fa-envelope"></i> admin@surfmatters.test</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Copyright -->
-        <div class="footer-text text-center py-3">© 2020 Copyright:
-            <p class="footer-text">Adam Parker</p>
-        </div>
-        <!-- Copyright -->
-    </footer>
+            <!-- Copyright -->
+            <div class="footer-text text-center py-3">© 2020 Copyright:
+                <p class="footer-text">Adam Parker</p>
+            </div>
+            <!-- Copyright -->
+        </footer>
     {% endblock %}
 
     {% block postloadjs %}
-    <script type="text/javascript">
-        $('.toast').toast('show');
-    </script>
+        <script type="text/javascript">
+            $('.toast').toast('show');
+        </script>
 
     {% endblock %}
 
