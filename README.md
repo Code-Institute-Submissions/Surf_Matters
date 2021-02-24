@@ -393,6 +393,8 @@ in the right way. Images were displayed as they should be, and all items were re
 
 [CSS validation.](https://jigsaw.w3.org/css-validator/)
 
+[JavaScript validation.](https://jshint.com/)
+
 ### _**Issues found in testing**_
 
 1. The Surf Lessons were displaying on the all products page, when they should only be displayed on the Surf Lessons page. To resolve this
