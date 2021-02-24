@@ -29,10 +29,10 @@ The deployed website can be viewed here -[Surf Matters](https://adamp-surf-matte
 ## **UX**
 
 The website was designed to be responsive and easy to use and navigate. I designed a home page with an image carousel
-of various surfing images, with buton links to the products, surf lessons and blog.
+of various surfing images, with button links to the products, surf lessons and blog.
 
 The site is easy to navigate, users can use the menu links in the navigation bar at the top of the page,
-and each page has a consistent layout to it with the header and footer replicatred across the site. 
+and each page has a consistent layout to it with the header and footer replicated across the site, 
 this gives users a familiar feel to each page when navigating the site.
 
 I chose black and white as the main colours for the site as the surfing, product and blog images
@@ -42,7 +42,7 @@ are quite colourful due to the nature of their content.
 
 The overall aim of the site is to enable users to access the online store for the Surf Matters
 surf shop. It is designed to be somewhere that Surf Matters can showcase their products online and 
-also sell other services they offer to a far wider audience than the just the people who visit their
+also sell other services they offer to a far wider audience than just the people who visit their
 shop. 
 
 The inclusion of a blog is designed to give the store a community feel, users are encouraged to email in an 
@@ -102,8 +102,8 @@ production. A number of different models are used throughout the site as detaile
 
 #### Product model
 
-The product model holds all the information relating to products sold in the store, it has two froeign keys, those being
-category and subcategory, and is also a Foreign Key to the OrderLineItem model.
+The product model holds all the information relating to products sold in the store, it has two foreign keys, those being
+category and subcategory, and is also a foreign key to the OrderLineItem model.
 
 | Field       | Type                |
 |-------------|---------------------|
@@ -155,12 +155,12 @@ the user_profile as a Foreign key to bring across registered users stored detail
 #### OrderLineItem model
 
 The order line item model is used to create an order line for each product in the shopping bag. It takes in the order as a 
-Foreign Key this enable us to access orders and make certain calls on them. It also takes in product as a Foreign Key, which
+Foreign Key, which enable us to access orders and make certain calls on them. It also takes in product as a Foreign Key, which
 gives it access to all the associated fields of that model.
 
 
 | Field          | Type                |
-|----------------|---------------------|
+|----------------|---------------------| 
 | order          | models.ForeignKey   |
 | product        | models.ForeignKey   |
 | product_size   | models.CharField    |
@@ -212,7 +212,7 @@ The comment model is used to add comments to the blog articles.
 | email   | models.EmailField    |
 | comment | models.TextField     |
 | date    | models.DateTimeField |
-| active  | modesl.BooleanField  |
+| active  | models.BooleanField  |
 
 <div align="center">
 
@@ -306,7 +306,7 @@ collapses down on smaller devices.
 
 * **Product Sorting** - Users have the ability to sort products by name, price and rating.
 
-* **Product Filtering** - Users can filter products by category and subcsategory.
+* **Product Filtering** - Users can filter products by category and subcategory.
 
 * **Shopping bag** - Users are able to add products to their shopping bag whilst browsing the store. When viewing the bag they can update (i.e. change sizes), or
 remove products they no longer wish to purchase.
@@ -318,7 +318,7 @@ such as logging in and out and adding products to their bag. Users also reveive 
 
 * **Profile Page** - Users get a profile page, which stores their default delivery information and previous order history.
 
-* **Secure Checkout** - User can checkout and purchase goods securely, the site utilises [Stripe](https://stripe.com/gb), a secure online payment
+* **Secure Checkout** - Users can checkout and purchase goods securely, the site utilises [Stripe](https://stripe.com/gb), a secure online payment
 processing facility.
 
 * **Blog Comments** - Users are able to add their comments to the blog articles, using a form at the bottom of each blog article. The comments
@@ -330,7 +330,7 @@ are then displayed underneath the article.
 
 [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - Provides some of the styling for the site.
 
-[Bootstrap](https://getbootstrap.com/) - Utilised for a lot of the styling of the site such as prodcut card and forms. Also used to make the site responsive.
+[Bootstrap](https://getbootstrap.com/) - Utilised for a lot of the styling of the site such as product card and forms. Also used to make the site responsive.
 Bootstrap 4.6 was chosen as Crispy Forms are not available with Bootstrap 5.
 
 [Python](https://www.python.org/) - The main code used in the back end with Django.
@@ -349,7 +349,7 @@ Bootstrap 4.6 was chosen as Crispy Forms are not available with Bootstrap 5.
 
 [Heroku Postgres](https://www.heroku.com/postgres) - Used for storing the databases in production.
 
-[jQuery](https://jquery.com/) - USed for functionality of the site such as the Bootstrap carousel and stripe elements.
+[jQuery](https://jquery.com/) - Used for functionality of the site such as the Bootstrap carousel and stripe elements.
 
 [Google Fonts](https://fonts.google.com/) -  The site uses the Oswald and Roboto fonts.
 
@@ -396,17 +396,17 @@ in the right way. Images were displayed as they should be, and all items were re
 ### _**Issues found in testing**_
 
 1. The Surf Lessons were displaying on the all products page, when they should only be displayed on the Surf Lessons page. To resolve this
-I created a category objects filter for the surf lessons in the all_products view. Then created a prdoucts filter to not include the surf lessons.
+I created a category objects filter for the surf lessons in the all_products view. Then created a products filter to not include the surf lessons.
 
 2. No products were displaying after adding the product filter in the all_products view. This was resolved by changing the products.filter to 
 **category__name__exact** instead of **category__name__in**.
 
 3. On the checkout page the processing overlay was appearing on mobile devices after pressing the navbar hamburger link. I realised that 
-I hadn't given an ID to the checkout button so the overlay was looing for anything with a class of button. This worked correctly once
+I hadn't given an ID to the checkout button so the overlay was looking for any element with a class of button. This worked correctly once
 this was changed.
 
 4. After logging in with your username and password, a toast message should appear saying succesfully logged in. This was not showing on the site,
-howerver when inspecting in Dev tools the HTML elements for the toast message were there. I found that the Bootstrap Jquery for the toast message
+however when inspecting in Dev tools the HTML elements for the toast message were there. I found that the Bootstrap Jquery for the toast message
 was not working fully on the home page. So I copied across the Jquery code to the **postloadjs** on the home page. 
 
 5. The comments form on the blog details page was not responsive, causing the user to side scroll. I resolved this by rendering it as a **crispy form**.
@@ -428,7 +428,7 @@ The following steps are taken to deploy the website.
 3. A URL is displayed, to clone with HTTPS copy this URL
 
 <p align="center">
-    <img width="400" height="300" src="files/images/deployment/git_clone_2.JPG">
+    <img width="400" height="300" src="files/images/deployment/gitpod_clone.JPG">
 </p>
 
 4. Open up your preferred IDE (Integrated Development Environment)
@@ -519,7 +519,7 @@ The site is now deployed on Heroku.
 
 ### _**Amazon Web Services (AWS)**_
 
-I have hosted the static files and media files for the deployed site in an [Amazon Web Services](https://aws.amazon.com/) **S3** bucket. To store the files,
+I have hosted the static files and media files for the deployed site in an [Amazon Web Services](https://aws.amazon.com/) **S3** bucket. To store the files
 an S3 bucket needs to be created, the documentation for setting one up can be found [here](https://docs.aws.amazon.com/s3/?id=docs_gateway). You will need to use 
 the below code for your CORS configuration when required.
 
@@ -555,7 +555,7 @@ Back in your IDE follow the below steps.
   <img width="350" height="250" src="files/images/deployment/s3_gitpod_settings.JPG">
 </p>
 
-5. In the project root directory create a **custom_storages.py** file and add teh following code.
+5. In the project root directory create a **custom_storages.py** file and add the following code.
 
 <p align="center">
   <img width="350" height="250" src="files/images/deployment/s3_custom_storages.JPG">

@@ -153,7 +153,7 @@
   <img width="500" height="400" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/register_test_2.JPG">
 </p> 
 
-6. Fill the form in and click sign up?
+6. Fill the form in and click sign up.
 7. Once submitted do you receive an email verification message?
 
 <p align="center">
@@ -223,7 +223,7 @@
 </p> 
 
 4. Click the login link.
-5. On the sign in page, is there a forgot password link underneath the sign on buttons?
+5. On the sign in page, is there a forgot password link underneath the sign in buttons?
 
 <p align="center">
   <img width="200" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/forgot_password_test_1.JPG">
@@ -344,7 +344,7 @@
   <img width="300" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/sort_test_1.JPG">
 </p>
 
-5. Click on sort by, do you get the option to sort, by price, name and rating?
+5. Click on sort by, do you get the option to sort by price, name and rating?
 6. Sort the products by price, does the order of the products displayed change?
 7. Choose the other options in the sort by drop down, does the order of products displayed
 change accordingly?
@@ -466,7 +466,7 @@ subcategory?
 </p> 
 
 4. Does a page appear titled Blog?
-5. Scroll the blog page are there a number of blog articles displayed?
+5. Scroll the blog page, are there a number of blog articles displayed?
 6. Click the Read More button on one of the blogs.
 
 <p align="center">
