@@ -16,9 +16,7 @@ def all_products(request):
 
     if request.GET.get('category'):
         is_products = request.GET.get('category') != lessons_category.name
-        products = Product.objects.filter(~Q(
-            category__name__icontains='Lesson')) if is_products else Product.objects.filter(
-                Q(category__name__icontains='Lesson'))
+        products = Product.objects.filter(~Q(category__name__icontains='Lesson')) if is_products else Product.objects.filter(Q(category__name__icontains='Lesson'))
     else:
         # Search
         is_products = True
