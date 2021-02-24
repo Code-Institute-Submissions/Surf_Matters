@@ -291,7 +291,7 @@
 7. Adjust the quantity of the product and click update.
 8. Has the bag updated to reflect the change?
 9. Click the remove link.
-10. Is the bag is empty message displayed with a keep shopping button?
+10. Is the bag is empty message displayed with a continue shopping button?
 
 <p align="center">
   <img width="200" height="150" src="https://github.com/adamparker75/Surf_Matters/blob/master/files/images/adjust_bag_test_2.JPG">
